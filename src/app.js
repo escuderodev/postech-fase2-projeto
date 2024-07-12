@@ -14,7 +14,7 @@ const dbPass = process.env.DB_PASSWORD
 app.use(json())
 
 // conectar no banco de dados
-mongoose.connect(`mongodb+srv://${dbUser}:${dbPass}@api-node-auth.9inpulb.mongodb.net/Auth?retryWrites=true&w=majority&appName=api-node-auth`).then(()=> {
+mongoose.connect(`mongodb+srv://${dbUser}:${dbPass}@postech2.mpdvipw.mongodb.net/Users?retryWrites=true&w=majority&appName=postech2`).then(()=> {
     app.listen(PORT, () => {
         console.log(`Server is running on http://localhost:${PORT}`)
     })
