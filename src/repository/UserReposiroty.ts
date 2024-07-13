@@ -1,6 +1,5 @@
 import { Request } from "express"
 import { PrismaClient } from "@prisma/client"
-import { UserDTO } from "../model/UserDTO"
 
 const prisma = new PrismaClient()
 
@@ -11,23 +10,26 @@ export class UserReposiroty {
                 name: req.body.name,
                 email: req.body.email,
                 password: passwordHash
+            },
+            select: {
+                id: true,
+                name: true,
+                email: true,
+                password: false
             }
         })
-
-        const userDTO = new UserDTO(user.id, user.name, user.email)
-        return userDTO
-    }
-
-    async delete(req: Request) {
-        await prisma.user.delete({
-            where: {
-                id: req.params.id
-            }
-        })
+        return user
     }
 
     async getAll() {
-        return await prisma.user.findMany()
+        return await prisma.user.findMany({
+            select: {
+                id: true,
+                name: true,
+                email: true,
+                password: false
+            }
+        })
     }
 
     async getById(req: Request) {
@@ -35,6 +37,12 @@ export class UserReposiroty {
             where: {
               id: req.params.id,
             },
+            select: {
+                id: true,
+                name: true,
+                email: true,
+                password: false
+            }
           })
           return userSearch
     }
@@ -43,13 +51,12 @@ export class UserReposiroty {
         const userSearch = await prisma.user.findUnique({
             where: {
               email: req.body.email,
-            },
+            }
           })
           return userSearch
     }
 
-    async update(req: Request) {
-        console.log(req.params.id)
+    async update(req: Request, passwordHash: string) {
         return await prisma.user.update({
             where: {
                 id: req.params.id
@@ -57,7 +64,21 @@ export class UserReposiroty {
             data: {
                 name: req.body.name,
                 email: req.body.email,
-                password: req.body.password
+                password: passwordHash
+            },
+            select: {
+                id: true,
+                name: true,
+                email: true,
+                password: false
+            }
+        })
+    }
+
+    async delete(req: Request) {
+        await prisma.user.delete({
+            where: {
+                id: req.params.id
             }
         })
     }

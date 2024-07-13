@@ -4,9 +4,9 @@ import { CreateUserService } from "../service/CreateUserService"
 export const createUser = async (req: Request, res: Response) => {
 
     const createUserService = new CreateUserService()
-    const userDTO = await createUserService.execute(req, res)
+    const user = await createUserService.execute(req, res)
     return res.status(201).json({
         message: "create user is success!",
-        user: userDTO
+        user: user
     })
 }

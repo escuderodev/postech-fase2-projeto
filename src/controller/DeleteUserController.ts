@@ -7,11 +7,10 @@ export const deleteUser = async (req: Request, res: Response) => {
 
     try {
         await deleteUserService.execute(req)
-        return res.status(200).json({message: 'Usuário deletado com sucesso!'})
+        return res.status(200).json({message: 'User deleted!'})
     } catch (error) {
         return res.status(200).json({
-            message: `User Id ${req.params.id} not found!`,
-            erro: `${error}`
+            message: `User Id ${req.params.id} not found!`
           })
     }
 }

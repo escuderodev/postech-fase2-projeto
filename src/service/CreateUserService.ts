@@ -34,7 +34,7 @@ export class CreateUserService  {
             return res.status(422).json({message: "email already registered!"})
         }
     
-        // create password
+        // create password encoded
         const salt = await bcrypt.genSalt(12) //add dificult
         const passwordHash = await bcrypt.hash(password, salt) //create password encoded
         return userReposiroty.save(req, passwordHash)
