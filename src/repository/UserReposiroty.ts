@@ -1,5 +1,6 @@
 import { Request } from "express"
 import { PrismaClient } from "@prisma/client"
+import { UserDTO } from "../model/UserDTO"
 
 const prisma = new PrismaClient()
 
@@ -12,7 +13,9 @@ export class UserReposiroty {
                 password: passwordHash
             }
         })
-        return user
+
+        const userDTO = new UserDTO(user.id, user.name, user.email)
+        return userDTO
     }
 
     async delete(req: Request) {

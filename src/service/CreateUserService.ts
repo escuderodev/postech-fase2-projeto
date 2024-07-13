@@ -1,7 +1,6 @@
 import { Request, Response } from "express"
 import { UserReposiroty } from "../repository/UserReposiroty"
 import bcrypt from "bcrypt"
-import jsonwebtoken from "jsonwebtoken"
 
 export class CreateUserService  {
 
@@ -38,25 +37,6 @@ export class CreateUserService  {
         // create password
         const salt = await bcrypt.genSalt(12) //add dificult
         const passwordHash = await bcrypt.hash(password, salt) //create password encoded
-    
-        // create user
-        // const user = new User({
-        //     name,
-        //     email,
-        //     password: passwordHash,
-        // })
-    
-        // // others errors validation
-        // try {
-        //     await user.save()
-        //     res.status(201).json({message: "create user is success!"})
-            
-        // } catch (error) {
-        //     res.status(500).json({
-        //         message: `error when trying to register user!`,
-        //         erro: `${error}`})
-        // }
-
         return userReposiroty.save(req, passwordHash)
 
     }
