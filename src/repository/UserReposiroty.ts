@@ -36,6 +36,15 @@ export class UserReposiroty {
           return userSearch
     }
 
+    async getByEmail(req: Request) {
+        const userSearch = await prisma.user.findUnique({
+            where: {
+              email: req.body.email,
+            },
+          })
+          return userSearch
+    }
+
     async update(req: Request) {
         console.log(req.params.id)
         return await prisma.user.update({
@@ -45,7 +54,7 @@ export class UserReposiroty {
             data: {
                 name: req.body.name,
                 email: req.body.email,
-                age: req.body.age
+                password: req.body.password
             }
         })
     }

@@ -29,7 +29,7 @@ export class CreateUserService  {
     
         // check if users not exists
         // const userExists = await User.findOne({email: email})
-        const userExists = await userReposiroty.getById(req)
+        const userExists = await userReposiroty.getByEmail(req)
 
         if(userExists) {
             return res.status(422).json({message: "email already registered!"})
