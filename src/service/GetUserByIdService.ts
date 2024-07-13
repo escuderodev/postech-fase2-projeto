@@ -1,6 +1,5 @@
 import { Request } from "express"
 import { UserReposiroty } from "../repository/UserReposiroty"
-import { UserDTO } from "../model/UserDTO"
 
 export class GetUserByIdService  {
 
