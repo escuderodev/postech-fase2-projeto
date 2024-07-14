@@ -6,16 +6,19 @@ import { getUserById } from "./controller/User/GetUserByIdController"
 import { updateUser } from "./controller/User/UpdateUserController"
 import { deleteUser } from "./controller/User/DeleteUserController"
 import { login } from "./controller/User/LoginController"
+import { LoginService } from "./service/User/LoginService"
 
 const prisma = new PrismaClient()
 
 const router = Router()
 
+const loginService = new LoginService()
+
 //login
 router.post("/login", login)
 
 // criar usuário
-router.post("/users", createUser)
+router.post("/users", loginService.checkToken, createUser)
 
 // listar todos os usuários
 router.get("/users", getAllUsers)
@@ -24,9 +27,9 @@ router.get("/users", getAllUsers)
 router.get("/users/:id", getUserById)
 
 // atualizar usuário
-router.put("/users/:id", updateUser)
+router.put("/users/:id", loginService.checkToken, updateUser)
 
 // deletar usuário
-router.delete("/users/:id", deleteUser)
+router.delete("/users/:id", loginService.checkToken, deleteUser)
 
 export {router}

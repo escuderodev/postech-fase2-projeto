@@ -4,7 +4,10 @@ import bcrypt from "bcrypt"
 import "dotenv/config"
 import { UserReposiroty } from "../../repository/UserReposiroty"
 
+const secret = process.env.SECRET
+
 export class LoginService {
+
     async execute(req: Request, res: Response) {
 
         const userReposiroty = new UserReposiroty()
@@ -33,6 +36,22 @@ export class LoginService {
             },
             token: token
         }
+    }
 
+    async checkToken(req: Request, res: Response, next: Function) {
+        const tokenHeader = req.headers['authorization']
+        const token = tokenHeader && tokenHeader.split(" ")[1]
+    
+        if(!token) {
+            return res.status(401).json({message: "Access denied!"})
+        }
+    
+        try {
+            const secret = process.env.SECRET
+            jwt.verify(token, secret ?? '')
+            next()
+        } catch (error) {
+            res.status(400).json({message: "Token is not valid!"})
+        }
     }
 }
