@@ -1,5 +1,5 @@
 import { Request } from "express"
-import { UserReposiroty } from "../repository/UserReposiroty"
+import { UserReposiroty } from "../../repository/UserReposiroty"
 
 export class GetAllUsersService  {
 

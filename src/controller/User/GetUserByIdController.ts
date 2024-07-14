@@ -1,5 +1,5 @@
 import { Request, Response } from "express"
-import { GetUserByIdService } from "../service/GetUserByIdService"
+import { GetUserByIdService } from "../../service/User/GetUserByIdService"
 
 export const getUserById = async (req: Request, res: Response) => {
 

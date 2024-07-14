@@ -1,5 +1,5 @@
 import { Request, Response } from "express"
-import { UserReposiroty } from "../repository/UserReposiroty"
+import { UserReposiroty } from "../../repository/UserReposiroty"
 import bcrypt from "bcrypt"
 
 export class CreateUserService  {
@@ -27,8 +27,7 @@ export class CreateUserService  {
         }
     
         // check if users not exists
-        // const userExists = await User.findOne({email: email})
-        const userExists = await userReposiroty.getByEmail(req)
+        const userExists = await userReposiroty.getByEmail(email)
 
         if(userExists) {
             return res.status(422).json({message: "mail already registereed!"})

@@ -1,5 +1,5 @@
 import { Request, Response } from "express"
-import { UpdateUserService } from "../service/UpdateUserService"
+import { UpdateUserService } from "../../service/User/UpdateUserService"
 
 export const updateUser = async (req: Request, res: Response) => {
 

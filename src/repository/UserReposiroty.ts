@@ -47,10 +47,10 @@ export class UserReposiroty {
           return userSearch
     }
 
-    async getByEmail(req: Request) {
+    async getByEmail(email: string) {
         const userSearch = await prisma.user.findUnique({
             where: {
-              email: req.body.email,
+              email: email,
             }
           })
           return userSearch
