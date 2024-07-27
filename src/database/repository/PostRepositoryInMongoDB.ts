@@ -25,6 +25,17 @@ export class PostRepositoryInMongoDB implements PostRepository {
         return await Post.findById(id).populate('discipline')
     }
 
+    async getByText(regex: RegExp) {
+
+        const posts = await Post.find({
+            $or: [
+                { title: regex },
+                { description: regex },
+            ],
+        }).populate('discipline');
+        return posts
+    }
+
     async update(req: Request) {
 
         const id = req.params.id
