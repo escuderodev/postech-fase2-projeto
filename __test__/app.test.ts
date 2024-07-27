@@ -20,7 +20,6 @@ describe('===Testando o metodo GetAll ===', () => {
     const response = await request(app).get('/disciplinies');
     expect(response.status).toBe(200);
   });
-
   it('deve retornar status 404 para rota inexistente', async () => {
     const response = await request(app).get('/rota-inexistente');
     expect(response.status).toBe(404);
@@ -30,9 +29,12 @@ describe('===Testando o metodo GetAll ===', () => {
 // Test Post
 describe('===Testando o metodo Post ===', () => {
   it('deve retornar status 401 se não informado o token', async () => {
-    const response = (await request(app).post('/disciplinies').send({
-      title: "Teste de inserção de disciplina"
-    }));
+    const object = {
+      title: "Teste Post"
+    }
+    console.log(object)
+    const response = (await request(app).post('/disciplinies').send(object));
+    console.log(response.body)
     expect(response.status).toBe(401);
   });
 });

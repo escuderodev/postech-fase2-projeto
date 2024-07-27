@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1721926964865" clover="3.2.0">
-  <project timestamp="1721926964865" name="All files">
+<coverage generated="1722088828086" clover="3.2.0">
+  <project timestamp="1722088828086" name="All files">
     <metrics statements="378" coveredstatements="177" conditionals="25" coveredconditionals="2" methods="67" coveredmethods="17" elements="470" coveredelements="196" complexity="0" loc="378" ncloc="378" packages="12" files="42" classes="42"/>
     <package name="src">
       <metrics statements="14" coveredstatements="13" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="2"/>
-      <file name="server.ts" path="C:\Users\Escudero Escudero\Documents\GitHub\typescript\postech-fase2-mongoose-typescript\src\server.ts">
+      <file name="server.ts" path="C:\Users\Escudero Escudero\Documents\GitHub\postech-fase2-projeto\src\server.ts">
         <metrics statements="14" coveredstatements="13" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="2"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -24,7 +24,7 @@
     </package>
     <package name="src.controller.Discipline">
       <metrics statements="32" coveredstatements="13" conditionals="2" coveredconditionals="0" methods="10" coveredmethods="6"/>
-      <file name="CreateDisciplineController.ts" path="C:\Users\Escudero Escudero\Documents\GitHub\typescript\postech-fase2-mongoose-typescript\src\controller\Discipline\CreateDisciplineController.ts">
+      <file name="CreateDisciplineController.ts" path="C:\Users\Escudero Escudero\Documents\GitHub\postech-fase2-projeto\src\controller\Discipline\CreateDisciplineController.ts">
         <metrics statements="5" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
         <line num="4" count="1" type="stmt"/>
         <line num="6" count="1" type="stmt"/>
@@ -32,7 +32,7 @@
         <line num="11" count="0" type="stmt"/>
         <line num="12" count="0" type="stmt"/>
       </file>
-      <file name="DeleteDisciplineController.ts" path="C:\Users\Escudero Escudero\Documents\GitHub\typescript\postech-fase2-mongoose-typescript\src\controller\Discipline\DeleteDisciplineController.ts">
+      <file name="DeleteDisciplineController.ts" path="C:\Users\Escudero Escudero\Documents\GitHub\postech-fase2-projeto\src\controller\Discipline\DeleteDisciplineController.ts">
         <metrics statements="12" coveredstatements="3" conditionals="1" coveredconditionals="0" methods="2" coveredmethods="1"/>
         <line num="3" count="1" type="stmt"/>
         <line num="5" count="1" type="stmt"/>
@@ -47,14 +47,14 @@
         <line num="22" count="0" type="stmt"/>
         <line num="24" count="0" type="stmt"/>
       </file>
-      <file name="GetAllDiscipliniesController.ts" path="C:\Users\Escudero Escudero\Documents\GitHub\typescript\postech-fase2-mongoose-typescript\src\controller\Discipline\GetAllDiscipliniesController.ts">
+      <file name="GetAllDiscipliniesController.ts" path="C:\Users\Escudero Escudero\Documents\GitHub\postech-fase2-projeto\src\controller\Discipline\GetAllDiscipliniesController.ts">
         <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
         <line num="4" count="1" type="stmt"/>
         <line num="6" count="1" type="stmt"/>
         <line num="11" count="1" type="stmt"/>
         <line num="12" count="1" type="stmt"/>
       </file>
-      <file name="GetDisciplineByIdController.ts" path="C:\Users\Escudero Escudero\Documents\GitHub\typescript\postech-fase2-mongoose-typescript\src\controller\Discipline\GetDisciplineByIdController.ts">
+      <file name="GetDisciplineByIdController.ts" path="C:\Users\Escudero Escudero\Documents\GitHub\postech-fase2-projeto\src\controller\Discipline\GetDisciplineByIdController.ts">
         <metrics statements="7" coveredstatements="2" conditionals="1" coveredconditionals="0" methods="2" coveredmethods="1"/>
         <line num="4" count="1" type="stmt"/>
         <line num="6" count="1" type="stmt"/>
@@ -64,7 +64,7 @@
         <line num="15" count="0" type="stmt"/>
         <line num="18" count="0" type="stmt"/>
       </file>
-      <file name="UpdateDisciplineController.ts" path="C:\Users\Escudero Escudero\Documents\GitHub\typescript\postech-fase2-mongoose-typescript\src\controller\Discipline\UpdateDisciplineController.ts">
+      <file name="UpdateDisciplineController.ts" path="C:\Users\Escudero Escudero\Documents\GitHub\postech-fase2-projeto\src\controller\Discipline\UpdateDisciplineController.ts">
         <metrics statements="4" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
         <line num="4" count="1" type="stmt"/>
         <line num="6" count="1" type="stmt"/>
@@ -74,7 +74,7 @@
     </package>
     <package name="src.controller.Post">
       <metrics statements="39" coveredstatements="11" conditionals="2" coveredconditionals="0" methods="5" coveredmethods="0"/>
-      <file name="CreatePostController.ts" path="C:\Users\Escudero Escudero\Documents\GitHub\typescript\postech-fase2-mongoose-typescript\src\controller\Post\CreatePostController.ts">
+      <file name="CreatePostController.ts" path="C:\Users\Escudero Escudero\Documents\GitHub\postech-fase2-projeto\src\controller\Post\CreatePostController.ts">
         <metrics statements="8" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <line num="2" count="1" type="stmt"/>
         <line num="4" count="1" type="stmt"/>
@@ -85,7 +85,7 @@
         <line num="14" count="0" type="stmt"/>
         <line num="15" count="0" type="stmt"/>
       </file>
-      <file name="DeletePostController.ts" path="C:\Users\Escudero Escudero\Documents\GitHub\typescript\postech-fase2-mongoose-typescript\src\controller\Post\DeletePostController.ts">
+      <file name="DeletePostController.ts" path="C:\Users\Escudero Escudero\Documents\GitHub\postech-fase2-projeto\src\controller\Post\DeletePostController.ts">
         <metrics statements="13" coveredstatements="3" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
@@ -101,7 +101,7 @@
         <line num="18" count="0" type="stmt"/>
         <line num="20" count="0" type="stmt"/>
       </file>
-      <file name="GetAllPostsController.ts" path="C:\Users\Escudero Escudero\Documents\GitHub\typescript\postech-fase2-mongoose-typescript\src\controller\Post\GetAllPostsController.ts">
+      <file name="GetAllPostsController.ts" path="C:\Users\Escudero Escudero\Documents\GitHub\postech-fase2-projeto\src\controller\Post\GetAllPostsController.ts">
         <metrics statements="5" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <line num="2" count="1" type="stmt"/>
         <line num="4" count="1" type="stmt"/>
@@ -109,7 +109,7 @@
         <line num="7" count="0" type="stmt"/>
         <line num="8" count="0" type="stmt"/>
       </file>
-      <file name="GetPostByIdController.ts" path="C:\Users\Escudero Escudero\Documents\GitHub\typescript\postech-fase2-mongoose-typescript\src\controller\Post\GetPostByIdController.ts">
+      <file name="GetPostByIdController.ts" path="C:\Users\Escudero Escudero\Documents\GitHub\postech-fase2-projeto\src\controller\Post\GetPostByIdController.ts">
         <metrics statements="8" coveredstatements="2" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <line num="2" count="1" type="stmt"/>
         <line num="4" count="1" type="stmt"/>
@@ -120,7 +120,7 @@
         <line num="11" count="0" type="stmt"/>
         <line num="14" count="0" type="stmt"/>
       </file>
-      <file name="UpdatePostController.ts" path="C:\Users\Escudero Escudero\Documents\GitHub\typescript\postech-fase2-mongoose-typescript\src\controller\Post\UpdatePostController.ts">
+      <file name="UpdatePostController.ts" path="C:\Users\Escudero Escudero\Documents\GitHub\postech-fase2-projeto\src\controller\Post\UpdatePostController.ts">
         <metrics statements="5" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <line num="2" count="1" type="stmt"/>
         <line num="4" count="1" type="stmt"/>
@@ -131,7 +131,7 @@
     </package>
     <package name="src.controller.User">
       <metrics statements="41" coveredstatements="13" conditionals="2" coveredconditionals="0" methods="6" coveredmethods="0"/>
-      <file name="CreateUserController.ts" path="C:\Users\Escudero Escudero\Documents\GitHub\typescript\postech-fase2-mongoose-typescript\src\controller\User\CreateUserController.ts">
+      <file name="CreateUserController.ts" path="C:\Users\Escudero Escudero\Documents\GitHub\postech-fase2-projeto\src\controller\User\CreateUserController.ts">
         <metrics statements="5" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <line num="2" count="1" type="stmt"/>
         <line num="4" count="1" type="stmt"/>
@@ -139,7 +139,7 @@
         <line num="7" count="0" type="stmt"/>
         <line num="9" count="0" type="stmt"/>
       </file>
-      <file name="DeleteUserController.ts" path="C:\Users\Escudero Escudero\Documents\GitHub\typescript\postech-fase2-mongoose-typescript\src\controller\User\DeleteUserController.ts">
+      <file name="DeleteUserController.ts" path="C:\Users\Escudero Escudero\Documents\GitHub\postech-fase2-projeto\src\controller\User\DeleteUserController.ts">
         <metrics statements="13" coveredstatements="3" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
@@ -155,7 +155,7 @@
         <line num="18" count="0" type="stmt"/>
         <line num="20" count="0" type="stmt"/>
       </file>
-      <file name="GetAllUsersController.ts" path="C:\Users\Escudero Escudero\Documents\GitHub\typescript\postech-fase2-mongoose-typescript\src\controller\User\GetAllUsersController.ts">
+      <file name="GetAllUsersController.ts" path="C:\Users\Escudero Escudero\Documents\GitHub\postech-fase2-projeto\src\controller\User\GetAllUsersController.ts">
         <metrics statements="5" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <line num="2" count="1" type="stmt"/>
         <line num="4" count="1" type="stmt"/>
@@ -163,7 +163,7 @@
         <line num="7" count="0" type="stmt"/>
         <line num="8" count="0" type="stmt"/>
       </file>
-      <file name="GetUserByIdController.ts" path="C:\Users\Escudero Escudero\Documents\GitHub\typescript\postech-fase2-mongoose-typescript\src\controller\User\GetUserByIdController.ts">
+      <file name="GetUserByIdController.ts" path="C:\Users\Escudero Escudero\Documents\GitHub\postech-fase2-projeto\src\controller\User\GetUserByIdController.ts">
         <metrics statements="8" coveredstatements="2" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <line num="2" count="1" type="stmt"/>
         <line num="4" count="1" type="stmt"/>
@@ -174,7 +174,7 @@
         <line num="11" count="0" type="stmt"/>
         <line num="14" count="0" type="stmt"/>
       </file>
-      <file name="LoginController.ts" path="C:\Users\Escudero Escudero\Documents\GitHub\typescript\postech-fase2-mongoose-typescript\src\controller\User\LoginController.ts">
+      <file name="LoginController.ts" path="C:\Users\Escudero Escudero\Documents\GitHub\postech-fase2-projeto\src\controller\User\LoginController.ts">
         <metrics statements="5" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <line num="2" count="1" type="stmt"/>
         <line num="4" count="1" type="stmt"/>
@@ -182,7 +182,7 @@
         <line num="7" count="0" type="stmt"/>
         <line num="8" count="0" type="stmt"/>
       </file>
-      <file name="UpdateUserController.ts" path="C:\Users\Escudero Escudero\Documents\GitHub\typescript\postech-fase2-mongoose-typescript\src\controller\User\UpdateUserController.ts">
+      <file name="UpdateUserController.ts" path="C:\Users\Escudero Escudero\Documents\GitHub\postech-fase2-projeto\src\controller\User\UpdateUserController.ts">
         <metrics statements="5" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <line num="2" count="1" type="stmt"/>
         <line num="4" count="1" type="stmt"/>
@@ -193,7 +193,7 @@
     </package>
     <package name="src.database.repository">
       <metrics statements="44" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="16" coveredmethods="1"/>
-      <file name="DisciplineRepositoryInMongoDB.ts" path="C:\Users\Escudero Escudero\Documents\GitHub\typescript\postech-fase2-mongoose-typescript\src\database\repository\DisciplineRepositoryInMongoDB.ts">
+      <file name="DisciplineRepositoryInMongoDB.ts" path="C:\Users\Escudero Escudero\Documents\GitHub\postech-fase2-projeto\src\database\repository\DisciplineRepositoryInMongoDB.ts">
         <metrics statements="14" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="1"/>
         <line num="2" count="1" type="stmt"/>
         <line num="5" count="1" type="stmt"/>
@@ -210,7 +210,7 @@
         <line num="35" count="0" type="stmt"/>
         <line num="36" count="0" type="stmt"/>
       </file>
-      <file name="PostRepositoryInMongoDB.ts" path="C:\Users\Escudero Escudero\Documents\GitHub\typescript\postech-fase2-mongoose-typescript\src\database\repository\PostRepositoryInMongoDB.ts">
+      <file name="PostRepositoryInMongoDB.ts" path="C:\Users\Escudero Escudero\Documents\GitHub\postech-fase2-projeto\src\database\repository\PostRepositoryInMongoDB.ts">
         <metrics statements="14" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="0"/>
         <line num="2" count="1" type="stmt"/>
         <line num="4" count="1" type="stmt"/>
@@ -227,7 +227,7 @@
         <line num="42" count="0" type="stmt"/>
         <line num="43" count="0" type="stmt"/>
       </file>
-      <file name="UserRepositoryInMongoDB.ts" path="C:\Users\Escudero Escudero\Documents\GitHub\typescript\postech-fase2-mongoose-typescript\src\database\repository\UserRepositoryInMongoDB.ts">
+      <file name="UserRepositoryInMongoDB.ts" path="C:\Users\Escudero Escudero\Documents\GitHub\postech-fase2-projeto\src\database\repository\UserRepositoryInMongoDB.ts">
         <metrics statements="16" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="0"/>
         <line num="2" count="1" type="stmt"/>
         <line num="4" count="1" type="stmt"/>
@@ -249,7 +249,7 @@
     </package>
     <package name="src.model.discipline">
       <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-      <file name="Discipline.ts" path="C:\Users\Escudero Escudero\Documents\GitHub\typescript\postech-fase2-mongoose-typescript\src\model\discipline\Discipline.ts">
+      <file name="Discipline.ts" path="C:\Users\Escudero Escudero\Documents\GitHub\postech-fase2-projeto\src\model\discipline\Discipline.ts">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
@@ -258,7 +258,7 @@
     </package>
     <package name="src.model.post">
       <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-      <file name="Post.ts" path="C:\Users\Escudero Escudero\Documents\GitHub\typescript\postech-fase2-mongoose-typescript\src\model\post\Post.ts">
+      <file name="Post.ts" path="C:\Users\Escudero Escudero\Documents\GitHub\postech-fase2-projeto\src\model\post\Post.ts">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
@@ -267,7 +267,7 @@
     </package>
     <package name="src.model.user">
       <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-      <file name="User.ts" path="C:\Users\Escudero Escudero\Documents\GitHub\typescript\postech-fase2-mongoose-typescript\src\model\user\User.ts">
+      <file name="User.ts" path="C:\Users\Escudero Escudero\Documents\GitHub\postech-fase2-projeto\src\model\user\User.ts">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
@@ -276,7 +276,7 @@
     </package>
     <package name="src.routes">
       <metrics statements="69" coveredstatements="65" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="1"/>
-      <file name="disciplineRoutes.ts" path="C:\Users\Escudero Escudero\Documents\GitHub\typescript\postech-fase2-mongoose-typescript\src\routes\disciplineRoutes.ts">
+      <file name="disciplineRoutes.ts" path="C:\Users\Escudero Escudero\Documents\GitHub\postech-fase2-projeto\src\routes\disciplineRoutes.ts">
         <metrics statements="37" coveredstatements="33" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="1"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -316,7 +316,7 @@
         <line num="56" count="0" type="stmt"/>
         <line num="59" count="1" type="stmt"/>
       </file>
-      <file name="postRoutes.ts" path="C:\Users\Escudero Escudero\Documents\GitHub\typescript\postech-fase2-mongoose-typescript\src\routes\postRoutes.ts">
+      <file name="postRoutes.ts" path="C:\Users\Escudero Escudero\Documents\GitHub\postech-fase2-projeto\src\routes\postRoutes.ts">
         <metrics statements="15" coveredstatements="15" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -334,7 +334,7 @@
         <line num="26" count="1" type="stmt"/>
         <line num="28" count="1" type="stmt"/>
       </file>
-      <file name="userRoutes.ts" path="C:\Users\Escudero Escudero\Documents\GitHub\typescript\postech-fase2-mongoose-typescript\src\routes\userRoutes.ts">
+      <file name="userRoutes.ts" path="C:\Users\Escudero Escudero\Documents\GitHub\postech-fase2-projeto\src\routes\userRoutes.ts">
         <metrics statements="17" coveredstatements="17" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -357,7 +357,7 @@
     </package>
     <package name="src.service.Discipline">
       <metrics statements="26" coveredstatements="12" conditionals="2" coveredconditionals="0" methods="10" coveredmethods="6"/>
-      <file name="CreateDisciplineService.ts" path="C:\Users\Escudero Escudero\Documents\GitHub\typescript\postech-fase2-mongoose-typescript\src\service\Discipline\CreateDisciplineService.ts">
+      <file name="CreateDisciplineService.ts" path="C:\Users\Escudero Escudero\Documents\GitHub\postech-fase2-projeto\src\service\Discipline\CreateDisciplineService.ts">
         <metrics statements="7" coveredstatements="2" conditionals="1" coveredconditionals="0" methods="2" coveredmethods="1"/>
         <line num="4" count="1" type="stmt"/>
         <line num="6" count="1" type="stmt"/>
@@ -367,26 +367,26 @@
         <line num="20" count="0" type="stmt"/>
         <line num="21" count="0" type="stmt"/>
       </file>
-      <file name="DeleteDisciplineService.ts" path="C:\Users\Escudero Escudero\Documents\GitHub\typescript\postech-fase2-mongoose-typescript\src\service\Discipline\DeleteDisciplineService.ts">
+      <file name="DeleteDisciplineService.ts" path="C:\Users\Escudero Escudero\Documents\GitHub\postech-fase2-projeto\src\service\Discipline\DeleteDisciplineService.ts">
         <metrics statements="3" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
         <line num="4" count="1" type="stmt"/>
         <line num="6" count="1" type="stmt"/>
         <line num="10" count="0" type="stmt"/>
       </file>
-      <file name="GetAllDiscipliniesService.ts" path="C:\Users\Escudero Escudero\Documents\GitHub\typescript\postech-fase2-mongoose-typescript\src\service\Discipline\GetAllDiscipliniesService.ts">
+      <file name="GetAllDiscipliniesService.ts" path="C:\Users\Escudero Escudero\Documents\GitHub\postech-fase2-projeto\src\service\Discipline\GetAllDiscipliniesService.ts">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
         <line num="4" count="1" type="stmt"/>
         <line num="6" count="1" type="stmt"/>
         <line num="10" count="1" type="stmt"/>
       </file>
-      <file name="GetDisciplineByIdService.ts" path="C:\Users\Escudero Escudero\Documents\GitHub\typescript\postech-fase2-mongoose-typescript\src\service\Discipline\GetDisciplineByIdService.ts">
+      <file name="GetDisciplineByIdService.ts" path="C:\Users\Escudero Escudero\Documents\GitHub\postech-fase2-projeto\src\service\Discipline\GetDisciplineByIdService.ts">
         <metrics statements="4" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
         <line num="4" count="1" type="stmt"/>
         <line num="6" count="1" type="stmt"/>
         <line num="10" count="0" type="stmt"/>
         <line num="11" count="0" type="stmt"/>
       </file>
-      <file name="UpdateDisciplineService.ts" path="C:\Users\Escudero Escudero\Documents\GitHub\typescript\postech-fase2-mongoose-typescript\src\service\Discipline\UpdateDisciplineService.ts">
+      <file name="UpdateDisciplineService.ts" path="C:\Users\Escudero Escudero\Documents\GitHub\postech-fase2-projeto\src\service\Discipline\UpdateDisciplineService.ts">
         <metrics statements="9" coveredstatements="3" conditionals="1" coveredconditionals="0" methods="2" coveredmethods="1"/>
         <line num="3" count="1" type="stmt"/>
         <line num="5" count="1" type="stmt"/>
@@ -401,7 +401,7 @@
     </package>
     <package name="src.service.Post">
       <metrics statements="32" coveredstatements="12" conditionals="2" coveredconditionals="0" methods="5" coveredmethods="0"/>
-      <file name="CreatePostService.ts" path="C:\Users\Escudero Escudero\Documents\GitHub\typescript\postech-fase2-mongoose-typescript\src\service\Post\CreatePostService.ts">
+      <file name="CreatePostService.ts" path="C:\Users\Escudero Escudero\Documents\GitHub\postech-fase2-projeto\src\service\Post\CreatePostService.ts">
         <metrics statements="9" coveredstatements="3" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
@@ -413,21 +413,21 @@
         <line num="17" count="0" type="stmt"/>
         <line num="21" count="0" type="stmt"/>
       </file>
-      <file name="DeletePostService.ts" path="C:\Users\Escudero Escudero\Documents\GitHub\typescript\postech-fase2-mongoose-typescript\src\service\Post\DeletePostService.ts">
+      <file name="DeletePostService.ts" path="C:\Users\Escudero Escudero\Documents\GitHub\postech-fase2-projeto\src\service\Post\DeletePostService.ts">
         <metrics statements="4" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <line num="2" count="1" type="stmt"/>
         <line num="4" count="1" type="stmt"/>
         <line num="7" count="0" type="stmt"/>
         <line num="8" count="0" type="stmt"/>
       </file>
-      <file name="GetAllPostsService.ts" path="C:\Users\Escudero Escudero\Documents\GitHub\typescript\postech-fase2-mongoose-typescript\src\service\Post\GetAllPostsService.ts">
+      <file name="GetAllPostsService.ts" path="C:\Users\Escudero Escudero\Documents\GitHub\postech-fase2-projeto\src\service\Post\GetAllPostsService.ts">
         <metrics statements="4" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <line num="2" count="1" type="stmt"/>
         <line num="4" count="1" type="stmt"/>
         <line num="8" count="0" type="stmt"/>
         <line num="9" count="0" type="stmt"/>
       </file>
-      <file name="GetPostByIdService.ts" path="C:\Users\Escudero Escudero\Documents\GitHub\typescript\postech-fase2-mongoose-typescript\src\service\Post\GetPostByIdService.ts">
+      <file name="GetPostByIdService.ts" path="C:\Users\Escudero Escudero\Documents\GitHub\postech-fase2-projeto\src\service\Post\GetPostByIdService.ts">
         <metrics statements="5" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <line num="2" count="1" type="stmt"/>
         <line num="4" count="1" type="stmt"/>
@@ -435,7 +435,7 @@
         <line num="8" count="0" type="stmt"/>
         <line num="9" count="0" type="stmt"/>
       </file>
-      <file name="UpdatePostService.ts" path="C:\Users\Escudero Escudero\Documents\GitHub\typescript\postech-fase2-mongoose-typescript\src\service\Post\UpdatePostService.ts">
+      <file name="UpdatePostService.ts" path="C:\Users\Escudero Escudero\Documents\GitHub\postech-fase2-projeto\src\service\Post\UpdatePostService.ts">
         <metrics statements="10" coveredstatements="3" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
@@ -451,7 +451,7 @@
     </package>
     <package name="src.service.User">
       <metrics statements="72" coveredstatements="22" conditionals="15" coveredconditionals="2" methods="7" coveredmethods="1"/>
-      <file name="CreateUserService.ts" path="C:\Users\Escudero Escudero\Documents\GitHub\typescript\postech-fase2-mongoose-typescript\src\service\User\CreateUserService.ts">
+      <file name="CreateUserService.ts" path="C:\Users\Escudero Escudero\Documents\GitHub\postech-fase2-projeto\src\service\User\CreateUserService.ts">
         <metrics statements="19" coveredstatements="3" conditionals="5" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
@@ -473,21 +473,21 @@
         <line num="38" count="0" type="stmt"/>
         <line num="39" count="0" type="stmt"/>
       </file>
-      <file name="DeleteUserService.ts" path="C:\Users\Escudero Escudero\Documents\GitHub\typescript\postech-fase2-mongoose-typescript\src\service\User\DeleteUserService.ts">
+      <file name="DeleteUserService.ts" path="C:\Users\Escudero Escudero\Documents\GitHub\postech-fase2-projeto\src\service\User\DeleteUserService.ts">
         <metrics statements="4" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <line num="2" count="1" type="stmt"/>
         <line num="4" count="1" type="stmt"/>
         <line num="7" count="0" type="stmt"/>
         <line num="8" count="0" type="stmt"/>
       </file>
-      <file name="GetAllUsersService.ts" path="C:\Users\Escudero Escudero\Documents\GitHub\typescript\postech-fase2-mongoose-typescript\src\service\User\GetAllUsersService.ts">
+      <file name="GetAllUsersService.ts" path="C:\Users\Escudero Escudero\Documents\GitHub\postech-fase2-projeto\src\service\User\GetAllUsersService.ts">
         <metrics statements="4" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <line num="2" count="1" type="stmt"/>
         <line num="4" count="1" type="stmt"/>
         <line num="8" count="0" type="stmt"/>
         <line num="9" count="0" type="stmt"/>
       </file>
-      <file name="GetUserByIdService.ts" path="C:\Users\Escudero Escudero\Documents\GitHub\typescript\postech-fase2-mongoose-typescript\src\service\User\GetUserByIdService.ts">
+      <file name="GetUserByIdService.ts" path="C:\Users\Escudero Escudero\Documents\GitHub\postech-fase2-projeto\src\service\User\GetUserByIdService.ts">
         <metrics statements="5" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <line num="2" count="1" type="stmt"/>
         <line num="4" count="1" type="stmt"/>
@@ -495,7 +495,7 @@
         <line num="8" count="0" type="stmt"/>
         <line num="9" count="0" type="stmt"/>
       </file>
-      <file name="LoginService.ts" path="C:\Users\Escudero Escudero\Documents\GitHub\typescript\postech-fase2-mongoose-typescript\src\service\User\LoginService.ts">
+      <file name="LoginService.ts" path="C:\Users\Escudero Escudero\Documents\GitHub\postech-fase2-projeto\src\service\User\LoginService.ts">
         <metrics statements="26" coveredstatements="9" conditionals="9" coveredconditionals="2" methods="2" coveredmethods="1"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
@@ -524,7 +524,7 @@
         <line num="49" count="0" type="stmt"/>
         <line num="51" count="0" type="stmt"/>
       </file>
-      <file name="UpdateUserService.ts" path="C:\Users\Escudero Escudero\Documents\GitHub\typescript\postech-fase2-mongoose-typescript\src\service\User\UpdateUserService.ts">
+      <file name="UpdateUserService.ts" path="C:\Users\Escudero Escudero\Documents\GitHub\postech-fase2-projeto\src\service\User\UpdateUserService.ts">
         <metrics statements="14" coveredstatements="4" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
