@@ -1,28 +1,59 @@
-import { Router } from "express"
-import { createPost } from "../controller/Post/CreatePostController"
-import { deletePost } from "../controller/Post/DeletePostController"
-import { getAllPosts } from "../controller/Post/GetAllPostsController"
-import { getPostById } from "../controller/Post/GetPostByIdController"
-import { updatePost } from "../controller/Post/UpdatePostController"
+import { Request, Response, Router } from "express"
 import { LoginService } from "../service/User/LoginService"
+import { PostRepositoryInMongoDB } from "../database/repository/PostRepositoryInMongoDB"
+import { CreatePostService } from "../service/Post/CreatePostService"
+import { CreatePostController } from "../controller/Post/CreatePostController"
+import { GetAllPostsService } from "../service/Post/GetAllPostsService"
+import { GetAllPostsController } from "../controller/Post/GetAllPostsController"
+import { GetPostByIdService } from "../service/Post/GetPostByIdService"
+import { GetPostByIdController } from "../controller/Post/GetPostByIdController"
+import { UpdatePostService } from "../service/Post/UpdatePostService"
+import { UpdatePostController } from "../controller/Post/UpdatePostController"
+import { DeletePostService } from "../service/Post/DeletePostService"
+import { DeletePostController } from "../controller/Post/DeletePostController"
 
 const postRouter = Router()
-
+const respository = new PostRepositoryInMongoDB()
 const loginService = new LoginService()
 
-// criar task
-postRouter.post("/posts", loginService.checkToken, createPost)
+const createPostService = new CreatePostService(respository)
+const createPostController = new CreatePostController(createPostService)
 
-// listar todos as tasks
-postRouter.get("/posts", getAllPosts)
+const getAllPostsService = new GetAllPostsService(respository)
+const getAllPostsController = new GetAllPostsController(getAllPostsService)
 
-// listar apenas uma task
-postRouter.get("/posts/:id", getPostById)
+const getPostByIdService = new GetPostByIdService(respository)
+const getPostByIController = new GetPostByIdController(getPostByIdService)
 
-//  atualizar task
-postRouter.put("/posts/:id", loginService.checkToken, updatePost)
+const updatePostService = new UpdatePostService(respository)
+const updatePostController = new UpdatePostController(updatePostService)
 
-//  deletar task
-postRouter.delete("/posts/:id", loginService.checkToken, deletePost)
+const deletePostService = new DeletePostService(respository)
+const deletePostController = new DeletePostController(deletePostService)
+
+// criar
+postRouter.post("/posts", loginService.checkToken, (req: Request, res: Response) => {
+    createPostController.createPost(req, res)
+})
+
+// // listar todos
+postRouter.get("/posts", (req: Request, res: Response) => {
+    getAllPostsController.getAllPosts(req, res)
+})
+
+// // listar apenas um
+postRouter.get("/posts/:id", (req: Request, res: Response) => {
+    getPostByIController.getPostById(req, res)
+})
+
+// // atualizar
+postRouter.put("/posts/:id", loginService.checkToken, (req: Request, res: Response) => {
+    updatePostController.updatePost(req, res)
+})
+
+// // deletar
+postRouter.delete("/posts/:id", loginService.checkToken, (req: Request, res: Response) => {
+    deletePostController.deletePost(req, res)
+})
 
 export { postRouter }

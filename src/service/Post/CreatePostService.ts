@@ -1,12 +1,13 @@
 import { Request, Response } from "express"
-import { PostRepository } from "../../database/repository/PostRepositoryInMongoDB"
+import { PostRepositoryInMongoDB } from "../../database/repository/PostRepositoryInMongoDB"
 import Discipline from "../../model/discipline/Discipline";
 
 export class CreatePostService {
 
-    async execute(req: Request, res: Response) {
+    constructor(readonly repository: PostRepositoryInMongoDB) {
+    }
 
-        const postRepository = new PostRepository()
+    async execute(req: Request, res: Response) {
 
         const { title, description, discipline } = req.body;
 
@@ -18,6 +19,6 @@ export class CreatePostService {
         }
 
         // create post
-        return postRepository.save(req)
+        return this.repository.save(req)
     }
 }

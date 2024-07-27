@@ -1,11 +1,12 @@
 import { Request } from "express"
-import { PostRepository } from "../../database/repository/PostRepositoryInMongoDB"
+import { PostRepositoryInMongoDB } from "../../database/repository/PostRepositoryInMongoDB"
 
 export class GetPostByIdService  {
+    constructor(readonly repository: PostRepositoryInMongoDB) {
+    }
 
     async execute(req: Request) {
-        const postRepository = new PostRepository()
         const id = req.params.id
-        return await postRepository.getById(id)
+        return await this.repository.getById(id)
     }
 }

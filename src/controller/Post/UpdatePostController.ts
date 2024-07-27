@@ -1,14 +1,16 @@
 import { Request, Response } from "express"
 import { UpdatePostService } from "../../service/Post/UpdatePostService"
 
-export const updatePost = async (req: Request, res: Response) => {
+export class UpdatePostController {
+    constructor(readonly service: UpdatePostService){
+    }
 
-    const updatePostService = new UpdatePostService()
-
-    const result = await updatePostService.execute(req)
+    async updatePost (req: Request, res: Response) {
     
-    res.status(200).json({
-        message: result,
-    })
-
-}
+        const result = await this.service.execute(req)
+        
+        res.status(200).json({
+            message: result,
+        })
+    }
+} 

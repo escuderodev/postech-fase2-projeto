@@ -31,27 +31,27 @@ const updateDisciplineController = new UpdateDisciplineController(updateDiscipli
 const deleteDisciplineService = new DeleteDisciplineService(respository)
 const deleteDisciplineController = new DeleteDisciplineController(deleteDisciplineService)
 
-// criar task
+// criar
 disciplineRouter.post("/disciplinies", loginService.checkToken, (req: Request, res: Response) => {
     createDisciplineController.createDiscipline(req, res)
 })
 
-// // listar todos as tasks
+// // listar todos
 disciplineRouter.get("/disciplinies", (req: Request, res: Response) => {
     getAllDiscipliniesController.getAllDisciplinies(req, res)
 })
 
-// // listar apenas uma task
+// // listar apenas um
 disciplineRouter.get("/disciplinies/:id", (req: Request, res: Response) => {
     getDisciplineByIdController.getDisciplineById(req, res)
 })
 
-// // atualizar task
+// // atualizar
 disciplineRouter.put("/disciplinies/:id", loginService.checkToken, (req: Request, res: Response) => {
     updateDisciplineController.updateDiscipline(req, res)
 })
 
-// // deletar task
+// // deletar
 disciplineRouter.delete("/disciplinies/:id", loginService.checkToken, (req: Request, res: Response) => {
     deleteDisciplineController.deleteDiscipline(req, res)
 })

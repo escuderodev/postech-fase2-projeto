@@ -1,11 +1,11 @@
 import { Request } from "express"
-import { PostRepository } from "../../database/repository/PostRepositoryInMongoDB"
+import { PostRepositoryInMongoDB } from "../../database/repository/PostRepositoryInMongoDB"
 
 export class GetAllPostsService  {
+    constructor(readonly repository: PostRepositoryInMongoDB) {
+    }
 
     async execute(req: Request) {
-
-        const postRepository = new PostRepository()
-        return await postRepository.getAll()
+        return await this.repository.getAll()
     }
 }
