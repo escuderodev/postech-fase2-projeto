@@ -1,12 +1,13 @@
 import { Request, Response } from "express"
-import { UserRepository } from "../../database/repository/UserRepositoryInMongoDB"
+import { UserRepositoryInMongoDB } from "../../database/repository/UserRepositoryInMongoDB"
 import bcrypt from "bcrypt"
 
 export class CreateUserService  {
 
-    async execute(req: Request, res: Response) {
+    constructor(readonly repository: UserRepositoryInMongoDB) {
+    }
 
-        const userRepository = new UserRepository()
+    async execute(req: Request, res: Response) {
 
         const { name, email, password, confirmPassword} = req.body
 
@@ -27,7 +28,7 @@ export class CreateUserService  {
         }
     
         // check if users not exists
-        const userExists = await userRepository.getByEmail(email)
+        const userExists = await this.repository.getByEmail(email)
 
         if(userExists) {
             return res.status(422).json({message: "mail already registered!"})
@@ -36,7 +37,7 @@ export class CreateUserService  {
         // create password encoded
         const salt = await bcrypt.genSalt(12) //add dificult
         const passwordHash = await bcrypt.hash(password, salt) //create password encoded
-        return userRepository.save(req, passwordHash)
+        return this.repository.save(req, passwordHash)
 
     }
 }

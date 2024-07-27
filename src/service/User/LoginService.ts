@@ -2,15 +2,13 @@ import { Request, Response } from "express"
 import jwt from "jsonwebtoken"
 import bcrypt from "bcrypt"
 import "dotenv/config"
-import { UserRepository } from "../../database/repository/UserRepositoryInMongoDB"
-
-// const secret = process.env.SECRET
+import { UserRepositoryInMongoDB } from "../../database/repository/UserRepositoryInMongoDB"
 
 export class LoginService {
 
     async execute(req: Request, res: Response) {
 
-        const userRepository = new UserRepository()
+        const userRepository = new UserRepositoryInMongoDB()
         const { email, password } = req.body
 
         // check if users not exists

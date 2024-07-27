@@ -1,15 +1,20 @@
 import { Request, Response } from "express"
 import { GetUserByIdService } from "../../service/User/GetUserByIdService"
 
-export const getUserById = async (req: Request, res: Response) => {
+export class GetUserByIdController {
 
-  const getUserByIdService = new GetUserByIdService()
-  const user = await getUserByIdService.execute(req)
-
-  if(!user) {
-    res.status(200).json({message: `User Id ${req.params.id} not found!`})
-    return
+  constructor(readonly service: GetUserByIdService){
   }
+
+  async getUserById(req: Request, res: Response) {
+
+    const user = await this.service.execute(req)
   
-  res.status(200).json({message: user})
-}
+    if(!user) {
+      res.status(200).json({message: `User Id ${req.params.id} not found!`})
+      return
+    }
+    
+    res.status(200).json({message: user})
+  }
+} 

@@ -1,8 +1,11 @@
 import { Request } from "express"
 import User from "../../model/user/User"
+import { UserRepository } from "../../controller/User/repository/UserRepository"
 
-export class UserRepository {
+export class UserRepositoryInMongoDB implements UserRepository {
+    
     async save(req: Request, passwordHash: string) {
+        
         const { name, email } = req.body
         const user = {
             name: name,

@@ -1,11 +1,12 @@
 import { Request } from "express"
-import { UserRepository } from "../../database/repository/UserRepositoryInMongoDB"
+import { UserRepositoryInMongoDB } from "../../database/repository/UserRepositoryInMongoDB"
 
 export class GetAllUsersService  {
 
-    async execute(req: Request) {
+    constructor(readonly repository: UserRepositoryInMongoDB) {
+    }
 
-        const userRepository = new UserRepository()
-        return await userRepository.getAll()
+    async execute(req: Request) {
+        return await this.repository.getAll()
     }
 }

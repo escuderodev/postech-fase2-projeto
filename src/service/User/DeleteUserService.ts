@@ -1,10 +1,12 @@
 import { Request } from "express"
-import { UserRepository } from "../../database/repository/UserRepositoryInMongoDB"
+import { UserRepositoryInMongoDB } from "../../database/repository/UserRepositoryInMongoDB"
 
 export class DeleteUserService  {
 
+    constructor(readonly repository: UserRepositoryInMongoDB) {
+    }
+
     async execute(req: Request) {
-        const userRepository = new UserRepository()
-        return userRepository.delete(req)
+        return this.repository.delete(req)
     }
 }

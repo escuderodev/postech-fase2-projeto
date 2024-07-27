@@ -8,7 +8,6 @@ export class CreateDisciplineController {
 
     async createDiscipline(req: Request, res: Response) {
         const newDiscipline = await this.service.execute(req, res)
-        console.log(newDiscipline)
         res.status(201).json({newDiscipline})
     }
 }
