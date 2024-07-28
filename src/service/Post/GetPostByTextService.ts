@@ -1,6 +1,4 @@
-import { Request } from "express"
 import { PostRepositoryInMongoDB } from "../../database/repository/PostRepositoryInMongoDB"
-import Post from "../../model/post/Post";
 
 export class GetPostByTextService {
     constructor(readonly repository: PostRepositoryInMongoDB) {
