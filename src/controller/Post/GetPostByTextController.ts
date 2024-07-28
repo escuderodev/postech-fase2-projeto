@@ -7,7 +7,7 @@ export class GetPostByTextController {
 
   async getPostByText(req: Request, res: Response) {
 
-    const { keyword } = req.query
+    const { keyword } = req.params
 
     if(!keyword || typeof keyword !== 'string') {
       return res.status(400).json({erro: "A keyword is required for searching!"})

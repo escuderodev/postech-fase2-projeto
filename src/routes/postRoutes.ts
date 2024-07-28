@@ -67,7 +67,7 @@ postRouter.delete("/posts/:id", loginService.checkToken, (req: Request, res: Res
 })
 
 // buscar por palavra-chave
-postRouter.get("/posts/search", (req: Request, res: Response) => {
+postRouter.get("/posts/search/:keyword", (req: Request, res: Response) => {
     getPostByTextController.getPostByText(req, res)
 })
 
