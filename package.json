@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.ts",
   "scripts": {
-    "test": "jest --passWithNoTests --coverage",
+    "test": "jest --passWithNoTests",
     "dev": "ts-node-dev src/index.ts"
   },
   "keywords": [],
