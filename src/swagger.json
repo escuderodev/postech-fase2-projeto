@@ -1,0 +1,14 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Final project for phase 2 of the PosTech Dev FullStack course",
+        "description": "Documentação das APIs referente ao projeto Postagem de Aulas",
+        "termsOfService": "http://localhost:3000/terms",
+        "contact": {
+            "name": "Eduardo Escudero",
+            "email": "escuderodev@outlook.com",
+            "fone": "(11) 95500-5284"
+        },
+        "version": "1.0.0"
+    }
+}
