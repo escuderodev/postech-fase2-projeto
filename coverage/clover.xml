@@ -1,41 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1722177072763" clover="3.2.0">
-  <project timestamp="1722177072763" name="All files">
-    <metrics statements="426" coveredstatements="221" conditionals="28" coveredconditionals="2" methods="104" coveredmethods="39" elements="558" coveredelements="262" complexity="0" loc="426" ncloc="426" packages="12" files="44" classes="44"/>
+<coverage generated="1722178299286" clover="3.2.0">
+  <project timestamp="1722178299287" name="All files">
+    <metrics statements="426" coveredstatements="250" conditionals="28" coveredconditionals="2" methods="104" coveredmethods="52" elements="558" coveredelements="304" complexity="0" loc="426" ncloc="426" packages="12" files="44" classes="44"/>
     <package name="src">
       <metrics statements="14" coveredstatements="13" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="2"/>
       <file name="server.ts" path="C:\Users\Escudero Escudero\Documents\GitHub\postech-fase2-projeto\src\server.ts">
         <metrics statements="14" coveredstatements="13" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="2"/>
-        <line num="1" count="1" type="stmt"/>
-        <line num="2" count="1" type="stmt"/>
-        <line num="3" count="1" type="stmt"/>
-        <line num="4" count="1" type="stmt"/>
-        <line num="5" count="1" type="stmt"/>
-        <line num="7" count="1" type="stmt"/>
-        <line num="11" count="1" type="stmt"/>
-        <line num="12" count="1" type="stmt"/>
-        <line num="13" count="1" type="stmt"/>
-        <line num="14" count="1" type="stmt"/>
-        <line num="15" count="1" type="stmt"/>
-        <line num="16" count="1" type="stmt"/>
+        <line num="1" count="3" type="stmt"/>
+        <line num="2" count="3" type="stmt"/>
+        <line num="3" count="3" type="stmt"/>
+        <line num="4" count="3" type="stmt"/>
+        <line num="5" count="3" type="stmt"/>
+        <line num="7" count="3" type="stmt"/>
+        <line num="11" count="3" type="stmt"/>
+        <line num="12" count="3" type="stmt"/>
+        <line num="13" count="3" type="stmt"/>
+        <line num="14" count="3" type="stmt"/>
+        <line num="15" count="3" type="stmt"/>
+        <line num="16" count="3" type="stmt"/>
         <line num="17" count="0" type="stmt"/>
-        <line num="22" count="1" type="stmt"/>
+        <line num="22" count="3" type="stmt"/>
       </file>
     </package>
     <package name="src.controller.Discipline">
       <metrics statements="31" coveredstatements="13" conditionals="2" coveredconditionals="0" methods="10" coveredmethods="6"/>
       <file name="CreateDisciplineController.ts" path="C:\Users\Escudero Escudero\Documents\GitHub\postech-fase2-projeto\src\controller\Discipline\CreateDisciplineController.ts">
         <metrics statements="4" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
-        <line num="4" count="1" type="stmt"/>
-        <line num="6" count="1" type="stmt"/>
+        <line num="4" count="3" type="stmt"/>
+        <line num="6" count="3" type="stmt"/>
         <line num="10" count="0" type="stmt"/>
         <line num="11" count="0" type="stmt"/>
       </file>
       <file name="DeleteDisciplineController.ts" path="C:\Users\Escudero Escudero\Documents\GitHub\postech-fase2-projeto\src\controller\Discipline\DeleteDisciplineController.ts">
         <metrics statements="12" coveredstatements="3" conditionals="1" coveredconditionals="0" methods="2" coveredmethods="1"/>
-        <line num="3" count="1" type="stmt"/>
-        <line num="5" count="1" type="stmt"/>
-        <line num="7" count="1" type="stmt"/>
+        <line num="3" count="3" type="stmt"/>
+        <line num="5" count="3" type="stmt"/>
+        <line num="7" count="3" type="stmt"/>
         <line num="12" count="0" type="stmt"/>
         <line num="14" count="0" type="stmt"/>
         <line num="15" count="0" type="cond" truecount="0" falsecount="1"/>
@@ -48,15 +48,15 @@
       </file>
       <file name="GetAllDiscipliniesController.ts" path="C:\Users\Escudero Escudero\Documents\GitHub\postech-fase2-projeto\src\controller\Discipline\GetAllDiscipliniesController.ts">
         <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
-        <line num="4" count="1" type="stmt"/>
-        <line num="6" count="1" type="stmt"/>
+        <line num="4" count="3" type="stmt"/>
+        <line num="6" count="3" type="stmt"/>
         <line num="11" count="1" type="stmt"/>
         <line num="12" count="1" type="stmt"/>
       </file>
       <file name="GetDisciplineByIdController.ts" path="C:\Users\Escudero Escudero\Documents\GitHub\postech-fase2-projeto\src\controller\Discipline\GetDisciplineByIdController.ts">
         <metrics statements="7" coveredstatements="2" conditionals="1" coveredconditionals="0" methods="2" coveredmethods="1"/>
-        <line num="4" count="1" type="stmt"/>
-        <line num="6" count="1" type="stmt"/>
+        <line num="4" count="3" type="stmt"/>
+        <line num="6" count="3" type="stmt"/>
         <line num="11" count="0" type="stmt"/>
         <line num="13" count="0" type="cond" truecount="0" falsecount="1"/>
         <line num="14" count="0" type="stmt"/>
@@ -65,18 +65,18 @@
       </file>
       <file name="UpdateDisciplineController.ts" path="C:\Users\Escudero Escudero\Documents\GitHub\postech-fase2-projeto\src\controller\Discipline\UpdateDisciplineController.ts">
         <metrics statements="4" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
-        <line num="4" count="1" type="stmt"/>
-        <line num="6" count="1" type="stmt"/>
+        <line num="4" count="3" type="stmt"/>
+        <line num="6" count="3" type="stmt"/>
         <line num="11" count="0" type="stmt"/>
         <line num="13" count="0" type="stmt"/>
       </file>
     </package>
     <package name="src.controller.Post">
-      <metrics statements="44" coveredstatements="13" conditionals="5" coveredconditionals="0" methods="12" coveredmethods="6"/>
+      <metrics statements="44" coveredstatements="15" conditionals="5" coveredconditionals="0" methods="12" coveredmethods="7"/>
       <file name="CreatePostController.ts" path="C:\Users\Escudero Escudero\Documents\GitHub\postech-fase2-projeto\src\controller\Post\CreatePostController.ts">
         <metrics statements="7" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
-        <line num="4" count="1" type="stmt"/>
-        <line num="5" count="1" type="stmt"/>
+        <line num="4" count="3" type="stmt"/>
+        <line num="5" count="3" type="stmt"/>
         <line num="9" count="0" type="stmt"/>
         <line num="10" count="0" type="stmt"/>
         <line num="11" count="0" type="stmt"/>
@@ -85,9 +85,9 @@
       </file>
       <file name="DeletePostController.ts" path="C:\Users\Escudero Escudero\Documents\GitHub\postech-fase2-projeto\src\controller\Post\DeletePostController.ts">
         <metrics statements="12" coveredstatements="3" conditionals="1" coveredconditionals="0" methods="2" coveredmethods="1"/>
-        <line num="3" count="1" type="stmt"/>
-        <line num="5" count="1" type="stmt"/>
-        <line num="6" count="1" type="stmt"/>
+        <line num="3" count="3" type="stmt"/>
+        <line num="5" count="3" type="stmt"/>
+        <line num="6" count="3" type="stmt"/>
         <line num="11" count="0" type="stmt"/>
         <line num="13" count="0" type="stmt"/>
         <line num="14" count="0" type="cond" truecount="0" falsecount="1"/>
@@ -99,16 +99,16 @@
         <line num="23" count="0" type="stmt"/>
       </file>
       <file name="GetAllPostsController.ts" path="C:\Users\Escudero Escudero\Documents\GitHub\postech-fase2-projeto\src\controller\Post\GetAllPostsController.ts">
-        <metrics statements="4" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
-        <line num="4" count="1" type="stmt"/>
-        <line num="5" count="1" type="stmt"/>
-        <line num="9" count="0" type="stmt"/>
-        <line num="10" count="0" type="stmt"/>
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="4" count="3" type="stmt"/>
+        <line num="5" count="3" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
       </file>
       <file name="GetPostByIdController.ts" path="C:\Users\Escudero Escudero\Documents\GitHub\postech-fase2-projeto\src\controller\Post\GetPostByIdController.ts">
         <metrics statements="7" coveredstatements="2" conditionals="1" coveredconditionals="0" methods="2" coveredmethods="1"/>
-        <line num="4" count="1" type="stmt"/>
-        <line num="5" count="1" type="stmt"/>
+        <line num="4" count="3" type="stmt"/>
+        <line num="5" count="3" type="stmt"/>
         <line num="10" count="0" type="stmt"/>
         <line num="12" count="0" type="cond" truecount="0" falsecount="1"/>
         <line num="13" count="0" type="stmt"/>
@@ -117,8 +117,8 @@
       </file>
       <file name="GetPostByTextController.ts" path="C:\Users\Escudero Escudero\Documents\GitHub\postech-fase2-projeto\src\controller\Post\GetPostByTextController.ts">
         <metrics statements="10" coveredstatements="2" conditionals="3" coveredconditionals="0" methods="2" coveredmethods="1"/>
-        <line num="4" count="1" type="stmt"/>
-        <line num="5" count="1" type="stmt"/>
+        <line num="4" count="3" type="stmt"/>
+        <line num="5" count="3" type="stmt"/>
         <line num="10" count="0" type="stmt"/>
         <line num="12" count="0" type="cond" truecount="0" falsecount="3"/>
         <line num="13" count="0" type="stmt"/>
@@ -130,26 +130,26 @@
       </file>
       <file name="UpdatePostController.ts" path="C:\Users\Escudero Escudero\Documents\GitHub\postech-fase2-projeto\src\controller\Post\UpdatePostController.ts">
         <metrics statements="4" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
-        <line num="4" count="1" type="stmt"/>
-        <line num="5" count="1" type="stmt"/>
+        <line num="4" count="3" type="stmt"/>
+        <line num="5" count="3" type="stmt"/>
         <line num="10" count="0" type="stmt"/>
         <line num="12" count="0" type="stmt"/>
       </file>
     </package>
     <package name="src.controller.User">
-      <metrics statements="36" coveredstatements="13" conditionals="2" coveredconditionals="0" methods="11" coveredmethods="5"/>
+      <metrics statements="36" coveredstatements="17" conditionals="2" coveredconditionals="0" methods="11" coveredmethods="7"/>
       <file name="CreateUserController.ts" path="C:\Users\Escudero Escudero\Documents\GitHub\postech-fase2-projeto\src\controller\User\CreateUserController.ts">
-        <metrics statements="4" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
-        <line num="4" count="1" type="stmt"/>
-        <line num="6" count="1" type="stmt"/>
-        <line num="10" count="0" type="stmt"/>
-        <line num="11" count="0" type="stmt"/>
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="4" count="3" type="stmt"/>
+        <line num="6" count="3" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
       </file>
       <file name="DeleteUserController.ts" path="C:\Users\Escudero Escudero\Documents\GitHub\postech-fase2-projeto\src\controller\User\DeleteUserController.ts">
         <metrics statements="12" coveredstatements="3" conditionals="1" coveredconditionals="0" methods="2" coveredmethods="1"/>
-        <line num="3" count="1" type="stmt"/>
-        <line num="5" count="1" type="stmt"/>
-        <line num="7" count="1" type="stmt"/>
+        <line num="3" count="3" type="stmt"/>
+        <line num="5" count="3" type="stmt"/>
+        <line num="7" count="3" type="stmt"/>
         <line num="12" count="0" type="stmt"/>
         <line num="14" count="0" type="stmt"/>
         <line num="15" count="0" type="cond" truecount="0" falsecount="1"/>
@@ -161,16 +161,16 @@
         <line num="24" count="0" type="stmt"/>
       </file>
       <file name="GetAllUsersController.ts" path="C:\Users\Escudero Escudero\Documents\GitHub\postech-fase2-projeto\src\controller\User\GetAllUsersController.ts">
-        <metrics statements="4" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
-        <line num="4" count="1" type="stmt"/>
-        <line num="6" count="1" type="stmt"/>
-        <line num="10" count="0" type="stmt"/>
-        <line num="11" count="0" type="stmt"/>
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="4" count="3" type="stmt"/>
+        <line num="6" count="3" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
       </file>
       <file name="GetUserByIdController.ts" path="C:\Users\Escudero Escudero\Documents\GitHub\postech-fase2-projeto\src\controller\User\GetUserByIdController.ts">
         <metrics statements="7" coveredstatements="2" conditionals="1" coveredconditionals="0" methods="2" coveredmethods="1"/>
-        <line num="4" count="1" type="stmt"/>
-        <line num="6" count="1" type="stmt"/>
+        <line num="4" count="3" type="stmt"/>
+        <line num="6" count="3" type="stmt"/>
         <line num="11" count="0" type="stmt"/>
         <line num="13" count="0" type="cond" truecount="0" falsecount="1"/>
         <line num="14" count="0" type="stmt"/>
@@ -179,26 +179,26 @@
       </file>
       <file name="LoginController.ts" path="C:\Users\Escudero Escudero\Documents\GitHub\postech-fase2-projeto\src\controller\User\LoginController.ts">
         <metrics statements="5" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
-        <line num="2" count="1" type="stmt"/>
-        <line num="4" count="1" type="stmt"/>
+        <line num="2" count="3" type="stmt"/>
+        <line num="4" count="3" type="stmt"/>
         <line num="6" count="0" type="stmt"/>
         <line num="7" count="0" type="stmt"/>
         <line num="8" count="0" type="stmt"/>
       </file>
       <file name="UpdateUserController.ts" path="C:\Users\Escudero Escudero\Documents\GitHub\postech-fase2-projeto\src\controller\User\UpdateUserController.ts">
         <metrics statements="4" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
-        <line num="4" count="1" type="stmt"/>
-        <line num="6" count="1" type="stmt"/>
+        <line num="4" count="3" type="stmt"/>
+        <line num="6" count="3" type="stmt"/>
         <line num="11" count="0" type="stmt"/>
         <line num="13" count="0" type="stmt"/>
       </file>
     </package>
     <package name="src.database.repository">
-      <metrics statements="46" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="17" coveredmethods="1"/>
+      <metrics statements="46" coveredstatements="15" conditionals="0" coveredconditionals="0" methods="17" coveredmethods="5"/>
       <file name="DisciplineRepositoryInMongoDB.ts" path="C:\Users\Escudero Escudero\Documents\GitHub\postech-fase2-projeto\src\database\repository\DisciplineRepositoryInMongoDB.ts">
         <metrics statements="14" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="1"/>
-        <line num="2" count="1" type="stmt"/>
-        <line num="5" count="1" type="stmt"/>
+        <line num="2" count="3" type="stmt"/>
+        <line num="5" count="3" type="stmt"/>
         <line num="7" count="0" type="stmt"/>
         <line num="8" count="0" type="stmt"/>
         <line num="9" count="0" type="stmt"/>
@@ -213,14 +213,14 @@
         <line num="36" count="0" type="stmt"/>
       </file>
       <file name="PostRepositoryInMongoDB.ts" path="C:\Users\Escudero Escudero\Documents\GitHub\postech-fase2-projeto\src\database\repository\PostRepositoryInMongoDB.ts">
-        <metrics statements="16" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="0"/>
-        <line num="2" count="1" type="stmt"/>
-        <line num="5" count="1" type="stmt"/>
+        <metrics statements="16" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="1"/>
+        <line num="2" count="3" type="stmt"/>
+        <line num="5" count="3" type="stmt"/>
         <line num="9" count="0" type="stmt"/>
         <line num="11" count="0" type="stmt"/>
         <line num="16" count="0" type="stmt"/>
         <line num="17" count="0" type="stmt"/>
-        <line num="21" count="0" type="stmt"/>
+        <line num="21" count="1" type="stmt"/>
         <line num="25" count="0" type="stmt"/>
         <line num="30" count="0" type="stmt"/>
         <line num="36" count="0" type="stmt"/>
@@ -232,17 +232,17 @@
         <line num="56" count="0" type="stmt"/>
       </file>
       <file name="UserRepositoryInMongoDB.ts" path="C:\Users\Escudero Escudero\Documents\GitHub\postech-fase2-projeto\src\database\repository\UserRepositoryInMongoDB.ts">
-        <metrics statements="16" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="0"/>
-        <line num="2" count="1" type="stmt"/>
-        <line num="5" count="1" type="stmt"/>
-        <line num="9" count="0" type="stmt"/>
-        <line num="10" count="0" type="stmt"/>
-        <line num="15" count="0" type="stmt"/>
-        <line num="16" count="0" type="stmt"/>
-        <line num="20" count="0" type="stmt"/>
+        <metrics statements="16" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="3"/>
+        <line num="2" count="3" type="stmt"/>
+        <line num="5" count="3" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="20" count="1" type="stmt"/>
         <line num="24" count="0" type="stmt"/>
-        <line num="28" count="0" type="stmt"/>
-        <line num="29" count="0" type="stmt"/>
+        <line num="28" count="1" type="stmt"/>
+        <line num="29" count="1" type="stmt"/>
         <line num="34" count="0" type="stmt"/>
         <line num="35" count="0" type="stmt"/>
         <line num="37" count="0" type="stmt"/>
@@ -255,168 +255,168 @@
       <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       <file name="Discipline.ts" path="C:\Users\Escudero Escudero\Documents\GitHub\postech-fase2-projeto\src\model\discipline\Discipline.ts">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="1" count="1" type="stmt"/>
-        <line num="9" count="1" type="stmt"/>
-        <line num="15" count="1" type="stmt"/>
+        <line num="1" count="3" type="stmt"/>
+        <line num="9" count="3" type="stmt"/>
+        <line num="15" count="3" type="stmt"/>
       </file>
     </package>
     <package name="src.model.post">
       <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       <file name="Post.ts" path="C:\Users\Escudero Escudero\Documents\GitHub\postech-fase2-projeto\src\model\post\Post.ts">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="1" count="1" type="stmt"/>
-        <line num="3" count="1" type="stmt"/>
-        <line num="15" count="1" type="stmt"/>
+        <line num="1" count="3" type="stmt"/>
+        <line num="3" count="3" type="stmt"/>
+        <line num="15" count="3" type="stmt"/>
       </file>
     </package>
     <package name="src.model.user">
       <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       <file name="User.ts" path="C:\Users\Escudero Escudero\Documents\GitHub\postech-fase2-projeto\src\model\user\User.ts">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="1" count="1" type="stmt"/>
-        <line num="3" count="1" type="stmt"/>
-        <line num="12" count="1" type="stmt"/>
+        <line num="1" count="3" type="stmt"/>
+        <line num="3" count="3" type="stmt"/>
+        <line num="12" count="3" type="stmt"/>
       </file>
     </package>
     <package name="src.routes">
-      <metrics statements="121" coveredstatements="105" conditionals="0" coveredconditionals="0" methods="17" coveredmethods="1"/>
+      <metrics statements="121" coveredstatements="108" conditionals="0" coveredconditionals="0" methods="17" coveredmethods="4"/>
       <file name="disciplineRoutes.ts" path="C:\Users\Escudero Escudero\Documents\GitHub\postech-fase2-projeto\src\routes\disciplineRoutes.ts">
         <metrics statements="37" coveredstatements="33" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="1"/>
-        <line num="1" count="1" type="stmt"/>
-        <line num="2" count="1" type="stmt"/>
-        <line num="3" count="1" type="stmt"/>
-        <line num="4" count="1" type="stmt"/>
-        <line num="5" count="1" type="stmt"/>
-        <line num="6" count="1" type="stmt"/>
-        <line num="7" count="1" type="stmt"/>
-        <line num="8" count="1" type="stmt"/>
-        <line num="9" count="1" type="stmt"/>
-        <line num="10" count="1" type="stmt"/>
-        <line num="11" count="1" type="stmt"/>
-        <line num="12" count="1" type="stmt"/>
-        <line num="13" count="1" type="stmt"/>
-        <line num="15" count="1" type="stmt"/>
-        <line num="16" count="1" type="stmt"/>
-        <line num="17" count="1" type="stmt"/>
-        <line num="19" count="1" type="stmt"/>
-        <line num="20" count="1" type="stmt"/>
-        <line num="22" count="1" type="stmt"/>
-        <line num="23" count="1" type="stmt"/>
-        <line num="25" count="1" type="stmt"/>
-        <line num="26" count="1" type="stmt"/>
-        <line num="28" count="1" type="stmt"/>
-        <line num="29" count="1" type="stmt"/>
-        <line num="31" count="1" type="stmt"/>
-        <line num="32" count="1" type="stmt"/>
-        <line num="35" count="1" type="stmt"/>
+        <line num="1" count="3" type="stmt"/>
+        <line num="2" count="3" type="stmt"/>
+        <line num="3" count="3" type="stmt"/>
+        <line num="4" count="3" type="stmt"/>
+        <line num="5" count="3" type="stmt"/>
+        <line num="6" count="3" type="stmt"/>
+        <line num="7" count="3" type="stmt"/>
+        <line num="8" count="3" type="stmt"/>
+        <line num="9" count="3" type="stmt"/>
+        <line num="10" count="3" type="stmt"/>
+        <line num="11" count="3" type="stmt"/>
+        <line num="12" count="3" type="stmt"/>
+        <line num="13" count="3" type="stmt"/>
+        <line num="15" count="3" type="stmt"/>
+        <line num="16" count="3" type="stmt"/>
+        <line num="17" count="3" type="stmt"/>
+        <line num="19" count="3" type="stmt"/>
+        <line num="20" count="3" type="stmt"/>
+        <line num="22" count="3" type="stmt"/>
+        <line num="23" count="3" type="stmt"/>
+        <line num="25" count="3" type="stmt"/>
+        <line num="26" count="3" type="stmt"/>
+        <line num="28" count="3" type="stmt"/>
+        <line num="29" count="3" type="stmt"/>
+        <line num="31" count="3" type="stmt"/>
+        <line num="32" count="3" type="stmt"/>
+        <line num="35" count="3" type="stmt"/>
         <line num="36" count="0" type="stmt"/>
-        <line num="40" count="1" type="stmt"/>
+        <line num="40" count="3" type="stmt"/>
         <line num="41" count="1" type="stmt"/>
-        <line num="45" count="1" type="stmt"/>
+        <line num="45" count="3" type="stmt"/>
         <line num="46" count="0" type="stmt"/>
-        <line num="50" count="1" type="stmt"/>
+        <line num="50" count="3" type="stmt"/>
         <line num="51" count="0" type="stmt"/>
-        <line num="55" count="1" type="stmt"/>
+        <line num="55" count="3" type="stmt"/>
         <line num="56" count="0" type="stmt"/>
-        <line num="59" count="1" type="stmt"/>
+        <line num="59" count="3" type="stmt"/>
       </file>
       <file name="postRoutes.ts" path="C:\Users\Escudero Escudero\Documents\GitHub\postech-fase2-projeto\src\routes\postRoutes.ts">
-        <metrics statements="45" coveredstatements="38" conditionals="0" coveredconditionals="0" methods="7" coveredmethods="0"/>
-        <line num="1" count="1" type="stmt"/>
-        <line num="2" count="1" type="stmt"/>
-        <line num="3" count="1" type="stmt"/>
-        <line num="4" count="1" type="stmt"/>
-        <line num="5" count="1" type="stmt"/>
-        <line num="6" count="1" type="stmt"/>
-        <line num="7" count="1" type="stmt"/>
-        <line num="8" count="1" type="stmt"/>
-        <line num="9" count="1" type="stmt"/>
-        <line num="10" count="1" type="stmt"/>
-        <line num="11" count="1" type="stmt"/>
-        <line num="12" count="1" type="stmt"/>
-        <line num="13" count="1" type="stmt"/>
-        <line num="14" count="1" type="stmt"/>
-        <line num="15" count="1" type="stmt"/>
-        <line num="17" count="1" type="stmt"/>
-        <line num="18" count="1" type="stmt"/>
-        <line num="19" count="1" type="stmt"/>
-        <line num="21" count="1" type="stmt"/>
-        <line num="22" count="1" type="stmt"/>
-        <line num="24" count="1" type="stmt"/>
-        <line num="25" count="1" type="stmt"/>
-        <line num="27" count="1" type="stmt"/>
-        <line num="28" count="1" type="stmt"/>
-        <line num="30" count="1" type="stmt"/>
-        <line num="31" count="1" type="stmt"/>
-        <line num="33" count="1" type="stmt"/>
-        <line num="34" count="1" type="stmt"/>
-        <line num="36" count="1" type="stmt"/>
-        <line num="37" count="1" type="stmt"/>
-        <line num="40" count="1" type="stmt"/>
+        <metrics statements="45" coveredstatements="39" conditionals="0" coveredconditionals="0" methods="7" coveredmethods="1"/>
+        <line num="1" count="3" type="stmt"/>
+        <line num="2" count="3" type="stmt"/>
+        <line num="3" count="3" type="stmt"/>
+        <line num="4" count="3" type="stmt"/>
+        <line num="5" count="3" type="stmt"/>
+        <line num="6" count="3" type="stmt"/>
+        <line num="7" count="3" type="stmt"/>
+        <line num="8" count="3" type="stmt"/>
+        <line num="9" count="3" type="stmt"/>
+        <line num="10" count="3" type="stmt"/>
+        <line num="11" count="3" type="stmt"/>
+        <line num="12" count="3" type="stmt"/>
+        <line num="13" count="3" type="stmt"/>
+        <line num="14" count="3" type="stmt"/>
+        <line num="15" count="3" type="stmt"/>
+        <line num="17" count="3" type="stmt"/>
+        <line num="18" count="3" type="stmt"/>
+        <line num="19" count="3" type="stmt"/>
+        <line num="21" count="3" type="stmt"/>
+        <line num="22" count="3" type="stmt"/>
+        <line num="24" count="3" type="stmt"/>
+        <line num="25" count="3" type="stmt"/>
+        <line num="27" count="3" type="stmt"/>
+        <line num="28" count="3" type="stmt"/>
+        <line num="30" count="3" type="stmt"/>
+        <line num="31" count="3" type="stmt"/>
+        <line num="33" count="3" type="stmt"/>
+        <line num="34" count="3" type="stmt"/>
+        <line num="36" count="3" type="stmt"/>
+        <line num="37" count="3" type="stmt"/>
+        <line num="40" count="3" type="stmt"/>
         <line num="41" count="0" type="stmt"/>
-        <line num="45" count="1" type="stmt"/>
-        <line num="46" count="0" type="stmt"/>
-        <line num="50" count="1" type="stmt"/>
+        <line num="45" count="3" type="stmt"/>
+        <line num="46" count="1" type="stmt"/>
+        <line num="50" count="3" type="stmt"/>
         <line num="51" count="0" type="stmt"/>
-        <line num="55" count="1" type="stmt"/>
+        <line num="55" count="3" type="stmt"/>
         <line num="56" count="0" type="stmt"/>
-        <line num="60" count="1" type="stmt"/>
+        <line num="60" count="3" type="stmt"/>
         <line num="61" count="0" type="stmt"/>
-        <line num="65" count="1" type="stmt"/>
+        <line num="65" count="3" type="stmt"/>
         <line num="66" count="0" type="stmt"/>
-        <line num="70" count="1" type="stmt"/>
+        <line num="70" count="3" type="stmt"/>
         <line num="71" count="0" type="stmt"/>
-        <line num="74" count="1" type="stmt"/>
+        <line num="74" count="3" type="stmt"/>
       </file>
       <file name="userRoutes.ts" path="C:\Users\Escudero Escudero\Documents\GitHub\postech-fase2-projeto\src\routes\userRoutes.ts">
-        <metrics statements="39" coveredstatements="34" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="0"/>
-        <line num="1" count="1" type="stmt"/>
-        <line num="2" count="1" type="stmt"/>
-        <line num="3" count="1" type="stmt"/>
-        <line num="4" count="1" type="stmt"/>
-        <line num="5" count="1" type="stmt"/>
-        <line num="6" count="1" type="stmt"/>
-        <line num="7" count="1" type="stmt"/>
-        <line num="8" count="1" type="stmt"/>
-        <line num="9" count="1" type="stmt"/>
-        <line num="10" count="1" type="stmt"/>
-        <line num="11" count="1" type="stmt"/>
-        <line num="12" count="1" type="stmt"/>
-        <line num="13" count="1" type="stmt"/>
-        <line num="14" count="1" type="stmt"/>
-        <line num="16" count="1" type="stmt"/>
-        <line num="17" count="1" type="stmt"/>
-        <line num="18" count="1" type="stmt"/>
-        <line num="20" count="1" type="stmt"/>
-        <line num="21" count="1" type="stmt"/>
-        <line num="23" count="1" type="stmt"/>
-        <line num="24" count="1" type="stmt"/>
-        <line num="26" count="1" type="stmt"/>
-        <line num="27" count="1" type="stmt"/>
-        <line num="29" count="1" type="stmt"/>
-        <line num="30" count="1" type="stmt"/>
-        <line num="32" count="1" type="stmt"/>
-        <line num="33" count="1" type="stmt"/>
-        <line num="36" count="1" type="stmt"/>
-        <line num="39" count="1" type="stmt"/>
-        <line num="40" count="0" type="stmt"/>
-        <line num="44" count="1" type="stmt"/>
-        <line num="45" count="0" type="stmt"/>
-        <line num="49" count="1" type="stmt"/>
+        <metrics statements="39" coveredstatements="36" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="2"/>
+        <line num="1" count="3" type="stmt"/>
+        <line num="2" count="3" type="stmt"/>
+        <line num="3" count="3" type="stmt"/>
+        <line num="4" count="3" type="stmt"/>
+        <line num="5" count="3" type="stmt"/>
+        <line num="6" count="3" type="stmt"/>
+        <line num="7" count="3" type="stmt"/>
+        <line num="8" count="3" type="stmt"/>
+        <line num="9" count="3" type="stmt"/>
+        <line num="10" count="3" type="stmt"/>
+        <line num="11" count="3" type="stmt"/>
+        <line num="12" count="3" type="stmt"/>
+        <line num="13" count="3" type="stmt"/>
+        <line num="14" count="3" type="stmt"/>
+        <line num="16" count="3" type="stmt"/>
+        <line num="17" count="3" type="stmt"/>
+        <line num="18" count="3" type="stmt"/>
+        <line num="20" count="3" type="stmt"/>
+        <line num="21" count="3" type="stmt"/>
+        <line num="23" count="3" type="stmt"/>
+        <line num="24" count="3" type="stmt"/>
+        <line num="26" count="3" type="stmt"/>
+        <line num="27" count="3" type="stmt"/>
+        <line num="29" count="3" type="stmt"/>
+        <line num="30" count="3" type="stmt"/>
+        <line num="32" count="3" type="stmt"/>
+        <line num="33" count="3" type="stmt"/>
+        <line num="36" count="3" type="stmt"/>
+        <line num="39" count="3" type="stmt"/>
+        <line num="40" count="1" type="stmt"/>
+        <line num="44" count="3" type="stmt"/>
+        <line num="45" count="1" type="stmt"/>
+        <line num="49" count="3" type="stmt"/>
         <line num="50" count="0" type="stmt"/>
-        <line num="54" count="1" type="stmt"/>
+        <line num="54" count="3" type="stmt"/>
         <line num="55" count="0" type="stmt"/>
-        <line num="59" count="1" type="stmt"/>
+        <line num="59" count="3" type="stmt"/>
         <line num="60" count="0" type="stmt"/>
-        <line num="63" count="1" type="stmt"/>
+        <line num="63" count="3" type="stmt"/>
       </file>
     </package>
     <package name="src.service.Discipline">
       <metrics statements="26" coveredstatements="12" conditionals="2" coveredconditionals="0" methods="10" coveredmethods="6"/>
       <file name="CreateDisciplineService.ts" path="C:\Users\Escudero Escudero\Documents\GitHub\postech-fase2-projeto\src\service\Discipline\CreateDisciplineService.ts">
         <metrics statements="7" coveredstatements="2" conditionals="1" coveredconditionals="0" methods="2" coveredmethods="1"/>
-        <line num="4" count="1" type="stmt"/>
-        <line num="6" count="1" type="stmt"/>
+        <line num="4" count="3" type="stmt"/>
+        <line num="6" count="3" type="stmt"/>
         <line num="11" count="0" type="stmt"/>
         <line num="15" count="0" type="cond" truecount="0" falsecount="1"/>
         <line num="16" count="0" type="stmt"/>
@@ -425,28 +425,28 @@
       </file>
       <file name="DeleteDisciplineService.ts" path="C:\Users\Escudero Escudero\Documents\GitHub\postech-fase2-projeto\src\service\Discipline\DeleteDisciplineService.ts">
         <metrics statements="3" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
-        <line num="4" count="1" type="stmt"/>
-        <line num="6" count="1" type="stmt"/>
+        <line num="4" count="3" type="stmt"/>
+        <line num="6" count="3" type="stmt"/>
         <line num="10" count="0" type="stmt"/>
       </file>
       <file name="GetAllDiscipliniesService.ts" path="C:\Users\Escudero Escudero\Documents\GitHub\postech-fase2-projeto\src\service\Discipline\GetAllDiscipliniesService.ts">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
-        <line num="4" count="1" type="stmt"/>
-        <line num="6" count="1" type="stmt"/>
+        <line num="4" count="3" type="stmt"/>
+        <line num="6" count="3" type="stmt"/>
         <line num="10" count="1" type="stmt"/>
       </file>
       <file name="GetDisciplineByIdService.ts" path="C:\Users\Escudero Escudero\Documents\GitHub\postech-fase2-projeto\src\service\Discipline\GetDisciplineByIdService.ts">
         <metrics statements="4" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
-        <line num="4" count="1" type="stmt"/>
-        <line num="6" count="1" type="stmt"/>
+        <line num="4" count="3" type="stmt"/>
+        <line num="6" count="3" type="stmt"/>
         <line num="10" count="0" type="stmt"/>
         <line num="11" count="0" type="stmt"/>
       </file>
       <file name="UpdateDisciplineService.ts" path="C:\Users\Escudero Escudero\Documents\GitHub\postech-fase2-projeto\src\service\Discipline\UpdateDisciplineService.ts">
         <metrics statements="9" coveredstatements="3" conditionals="1" coveredconditionals="0" methods="2" coveredmethods="1"/>
-        <line num="3" count="1" type="stmt"/>
-        <line num="5" count="1" type="stmt"/>
-        <line num="7" count="1" type="stmt"/>
+        <line num="3" count="3" type="stmt"/>
+        <line num="5" count="3" type="stmt"/>
+        <line num="7" count="3" type="stmt"/>
         <line num="12" count="0" type="stmt"/>
         <line num="14" count="0" type="stmt"/>
         <line num="16" count="0" type="cond" truecount="0" falsecount="1"/>
@@ -456,12 +456,12 @@
       </file>
     </package>
     <package name="src.service.Post">
-      <metrics statements="32" coveredstatements="14" conditionals="2" coveredconditionals="0" methods="12" coveredmethods="6"/>
+      <metrics statements="32" coveredstatements="15" conditionals="2" coveredconditionals="0" methods="12" coveredmethods="7"/>
       <file name="CreatePostService.ts" path="C:\Users\Escudero Escudero\Documents\GitHub\postech-fase2-projeto\src\service\Post\CreatePostService.ts">
         <metrics statements="8" coveredstatements="3" conditionals="1" coveredconditionals="0" methods="2" coveredmethods="1"/>
-        <line num="3" count="1" type="stmt"/>
-        <line num="5" count="1" type="stmt"/>
-        <line num="7" count="1" type="stmt"/>
+        <line num="3" count="3" type="stmt"/>
+        <line num="5" count="3" type="stmt"/>
+        <line num="7" count="3" type="stmt"/>
         <line num="12" count="0" type="stmt"/>
         <line num="16" count="0" type="stmt"/>
         <line num="17" count="0" type="cond" truecount="0" falsecount="1"/>
@@ -470,36 +470,36 @@
       </file>
       <file name="DeletePostService.ts" path="C:\Users\Escudero Escudero\Documents\GitHub\postech-fase2-projeto\src\service\Post\DeletePostService.ts">
         <metrics statements="3" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
-        <line num="4" count="1" type="stmt"/>
-        <line num="5" count="1" type="stmt"/>
+        <line num="4" count="3" type="stmt"/>
+        <line num="5" count="3" type="stmt"/>
         <line num="9" count="0" type="stmt"/>
       </file>
       <file name="GetAllPostsService.ts" path="C:\Users\Escudero Escudero\Documents\GitHub\postech-fase2-projeto\src\service\Post\GetAllPostsService.ts">
-        <metrics statements="3" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
-        <line num="4" count="1" type="stmt"/>
-        <line num="5" count="1" type="stmt"/>
-        <line num="9" count="0" type="stmt"/>
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="4" count="3" type="stmt"/>
+        <line num="5" count="3" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
       </file>
       <file name="GetPostByIdService.ts" path="C:\Users\Escudero Escudero\Documents\GitHub\postech-fase2-projeto\src\service\Post\GetPostByIdService.ts">
         <metrics statements="4" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
-        <line num="4" count="1" type="stmt"/>
-        <line num="5" count="1" type="stmt"/>
+        <line num="4" count="3" type="stmt"/>
+        <line num="5" count="3" type="stmt"/>
         <line num="9" count="0" type="stmt"/>
         <line num="10" count="0" type="stmt"/>
       </file>
       <file name="GetPostByTextService.ts" path="C:\Users\Escudero Escudero\Documents\GitHub\postech-fase2-projeto\src\service\Post\GetPostByTextService.ts">
         <metrics statements="5" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
-        <line num="3" count="1" type="stmt"/>
-        <line num="4" count="1" type="stmt"/>
+        <line num="3" count="3" type="stmt"/>
+        <line num="4" count="3" type="stmt"/>
         <line num="9" count="0" type="stmt"/>
         <line num="10" count="0" type="stmt"/>
         <line num="11" count="0" type="stmt"/>
       </file>
       <file name="UpdatePostService.ts" path="C:\Users\Escudero Escudero\Documents\GitHub\postech-fase2-projeto\src\service\Post\UpdatePostService.ts">
         <metrics statements="9" coveredstatements="3" conditionals="1" coveredconditionals="0" methods="2" coveredmethods="1"/>
-        <line num="3" count="1" type="stmt"/>
-        <line num="5" count="1" type="stmt"/>
-        <line num="6" count="1" type="stmt"/>
+        <line num="3" count="3" type="stmt"/>
+        <line num="5" count="3" type="stmt"/>
+        <line num="6" count="3" type="stmt"/>
         <line num="11" count="0" type="stmt"/>
         <line num="13" count="0" type="stmt"/>
         <line num="15" count="0" type="cond" truecount="0" falsecount="1"/>
@@ -509,54 +509,54 @@
       </file>
     </package>
     <package name="src.service.User">
-      <metrics statements="67" coveredstatements="22" conditionals="15" coveredconditionals="2" methods="12" coveredmethods="6"/>
+      <metrics statements="67" coveredstatements="33" conditionals="15" coveredconditionals="2" methods="12" coveredmethods="8"/>
       <file name="CreateUserService.ts" path="C:\Users\Escudero Escudero\Documents\GitHub\postech-fase2-projeto\src\service\User\CreateUserService.ts">
-        <metrics statements="18" coveredstatements="3" conditionals="5" coveredconditionals="0" methods="2" coveredmethods="1"/>
-        <line num="3" count="1" type="stmt"/>
-        <line num="5" count="1" type="stmt"/>
-        <line num="7" count="1" type="stmt"/>
-        <line num="12" count="0" type="stmt"/>
-        <line num="17" count="0" type="cond" truecount="0" falsecount="1"/>
+        <metrics statements="18" coveredstatements="13" conditionals="5" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="3" count="3" type="stmt"/>
+        <line num="5" count="3" type="stmt"/>
+        <line num="7" count="3" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="17" count="1" type="cond" truecount="0" falsecount="1"/>
         <line num="18" count="0" type="stmt"/>
-        <line num="20" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="20" count="1" type="cond" truecount="0" falsecount="1"/>
         <line num="21" count="0" type="stmt"/>
-        <line num="23" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="23" count="1" type="cond" truecount="0" falsecount="1"/>
         <line num="24" count="0" type="stmt"/>
-        <line num="26" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="26" count="1" type="cond" truecount="0" falsecount="1"/>
         <line num="27" count="0" type="stmt"/>
-        <line num="31" count="0" type="stmt"/>
-        <line num="33" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="31" count="1" type="stmt"/>
+        <line num="33" count="1" type="cond" truecount="0" falsecount="1"/>
         <line num="34" count="0" type="stmt"/>
-        <line num="38" count="0" type="stmt"/>
-        <line num="39" count="0" type="stmt"/>
-        <line num="40" count="0" type="stmt"/>
+        <line num="38" count="1" type="stmt"/>
+        <line num="39" count="1" type="stmt"/>
+        <line num="40" count="1" type="stmt"/>
       </file>
       <file name="DeleteUserService.ts" path="C:\Users\Escudero Escudero\Documents\GitHub\postech-fase2-projeto\src\service\User\DeleteUserService.ts">
         <metrics statements="3" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
-        <line num="4" count="1" type="stmt"/>
-        <line num="6" count="1" type="stmt"/>
+        <line num="4" count="3" type="stmt"/>
+        <line num="6" count="3" type="stmt"/>
         <line num="10" count="0" type="stmt"/>
       </file>
       <file name="GetAllUsersService.ts" path="C:\Users\Escudero Escudero\Documents\GitHub\postech-fase2-projeto\src\service\User\GetAllUsersService.ts">
-        <metrics statements="3" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
-        <line num="4" count="1" type="stmt"/>
-        <line num="6" count="1" type="stmt"/>
-        <line num="10" count="0" type="stmt"/>
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="4" count="3" type="stmt"/>
+        <line num="6" count="3" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
       </file>
       <file name="GetUserByIdService.ts" path="C:\Users\Escudero Escudero\Documents\GitHub\postech-fase2-projeto\src\service\User\GetUserByIdService.ts">
         <metrics statements="4" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
-        <line num="4" count="1" type="stmt"/>
-        <line num="6" count="1" type="stmt"/>
+        <line num="4" count="3" type="stmt"/>
+        <line num="6" count="3" type="stmt"/>
         <line num="10" count="0" type="stmt"/>
         <line num="11" count="0" type="stmt"/>
       </file>
       <file name="LoginService.ts" path="C:\Users\Escudero Escudero\Documents\GitHub\postech-fase2-projeto\src\service\User\LoginService.ts">
         <metrics statements="26" coveredstatements="9" conditionals="9" coveredconditionals="2" methods="2" coveredmethods="1"/>
-        <line num="2" count="1" type="stmt"/>
-        <line num="3" count="1" type="stmt"/>
-        <line num="4" count="1" type="stmt"/>
-        <line num="5" count="1" type="stmt"/>
-        <line num="7" count="1" type="stmt"/>
+        <line num="2" count="3" type="stmt"/>
+        <line num="3" count="3" type="stmt"/>
+        <line num="4" count="3" type="stmt"/>
+        <line num="5" count="3" type="stmt"/>
+        <line num="7" count="3" type="stmt"/>
         <line num="11" count="0" type="stmt"/>
         <line num="12" count="0" type="stmt"/>
         <line num="15" count="0" type="stmt"/>
@@ -569,10 +569,10 @@
         <line num="28" count="0" type="stmt"/>
         <line num="29" count="0" type="cond" truecount="0" falsecount="2"/>
         <line num="30" count="0" type="stmt"/>
-        <line num="37" count="3" type="stmt"/>
-        <line num="38" count="3" type="cond" truecount="1" falsecount="1"/>
-        <line num="40" count="3" type="cond" truecount="1" falsecount="0"/>
-        <line num="41" count="3" type="stmt"/>
+        <line num="37" count="8" type="stmt"/>
+        <line num="38" count="8" type="cond" truecount="1" falsecount="1"/>
+        <line num="40" count="8" type="cond" truecount="1" falsecount="0"/>
+        <line num="41" count="8" type="stmt"/>
         <line num="44" count="0" type="stmt"/>
         <line num="45" count="0" type="stmt"/>
         <line num="46" count="0" type="cond" truecount="0" falsecount="2"/>
@@ -581,10 +581,10 @@
       </file>
       <file name="UpdateUserService.ts" path="C:\Users\Escudero Escudero\Documents\GitHub\postech-fase2-projeto\src\service\User\UpdateUserService.ts">
         <metrics statements="13" coveredstatements="4" conditionals="1" coveredconditionals="0" methods="2" coveredmethods="1"/>
-        <line num="3" count="1" type="stmt"/>
-        <line num="4" count="1" type="stmt"/>
-        <line num="6" count="1" type="stmt"/>
-        <line num="8" count="1" type="stmt"/>
+        <line num="3" count="3" type="stmt"/>
+        <line num="4" count="3" type="stmt"/>
+        <line num="6" count="3" type="stmt"/>
+        <line num="8" count="3" type="stmt"/>
         <line num="13" count="0" type="stmt"/>
         <line num="14" count="0" type="stmt"/>
         <line num="16" count="0" type="stmt"/>
