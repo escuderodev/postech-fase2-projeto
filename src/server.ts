@@ -1,10 +1,9 @@
-import express, { json } from "express"
+import express, { json, Application } from 'express';
 import "dotenv/config"
 import { userRouter } from "../src/routes/userRoutes"
 import { disciplineRouter } from "./routes/disciplineRoutes"
 import { postRouter } from "./routes/postRoutes"
-import swaggerUi from "swagger-ui-express"
-import swaggerDocs from "./swagger.json"
+import { setupSwagger } from "../swagger"
 
 export class App {
     private server: express.Application
@@ -15,15 +14,13 @@ export class App {
         this.server.use(userRouter)
         this.server.use(disciplineRouter)
         this.server.use(postRouter)
-        this.server.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerDocs))
         this.server.get("/", (req: express.Request, res: express.Response) => {
             res.status(200).json({message: "Bem vindo a minha API!"})
         })
+        setupSwagger(this.server); // Configura o Swagger
     }
 
-    public getServer(): express.Application {
+    public getServer(): Application {
         return this.server
     }
 }
-
-//https://www.youtube.com/watch?v=WhFx2heoFrA
