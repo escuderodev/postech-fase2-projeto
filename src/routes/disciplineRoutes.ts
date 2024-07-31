@@ -1,35 +1,35 @@
-import { Request, Response, Router } from 'express'
-import { DisciplineRepositoryInMongoDB } from "../database/repository/DisciplineRepositoryInMongoDB"
-import { LoginService } from "../service/User/LoginService"
-import { CreateDisciplineService } from "../service/Discipline/CreateDisciplineService"
-import { CreateDisciplineController } from "../controller/Discipline/CreateDisciplineController"
-import { GetAllDiscipliniesService } from "../service/Discipline/GetAllDiscipliniesService"
-import { GetAllDiscipliniesController } from "../controller/Discipline/GetAllDiscipliniesController"
-import { GetDisciplineByIdService } from "../service/Discipline/GetDisciplineByIdService"
-import { GetDisciplineByIdController } from "../controller/Discipline/GetDisciplineByIdController"
-import { UpdateDisciplineService } from "../service/Discipline/UpdateDisciplineService"
-import { UpdateDisciplineController } from "../controller/Discipline/UpdateDisciplineController"
-import { DeleteDisciplineService } from "../service/Discipline/DeleteDisciplineService"
-import { DeleteDisciplineController } from "../controller/Discipline/DeleteDisciplineController"
+import { Request, Response, Router } from 'express';
+import { DisciplineRepositoryInMongoDB } from "../database/repository/DisciplineRepositoryInMongoDB";
+import { LoginService } from "../service/User/LoginService";
+import { CreateDisciplineService } from "../service/Discipline/CreateDisciplineService";
+import { CreateDisciplineController } from "../controller/Discipline/CreateDisciplineController";
+import { GetAllDiscipliniesService } from "../service/Discipline/GetAllDiscipliniesService";
+import { GetAllDiscipliniesController } from "../controller/Discipline/GetAllDiscipliniesController";
+import { GetDisciplineByIdService } from "../service/Discipline/GetDisciplineByIdService";
+import { GetDisciplineByIdController } from "../controller/Discipline/GetDisciplineByIdController";
+import { UpdateDisciplineService } from "../service/Discipline/UpdateDisciplineService";
+import { UpdateDisciplineController } from "../controller/Discipline/UpdateDisciplineController";
+import { DeleteDisciplineService } from "../service/Discipline/DeleteDisciplineService";
+import { DeleteDisciplineController } from "../controller/Discipline/DeleteDisciplineController";
 
-const disciplineRouter = Router()
-const respository = new DisciplineRepositoryInMongoDB()
-const loginService = new LoginService()
+const disciplineRouter = Router();
+const respository = new DisciplineRepositoryInMongoDB();
+const loginService = new LoginService();
 
-const createDisciplineService = new CreateDisciplineService(respository)
-const createDisciplineController = new CreateDisciplineController(createDisciplineService)
+const createDisciplineService = new CreateDisciplineService(respository);
+const createDisciplineController = new CreateDisciplineController(createDisciplineService);
 
-const getAllDiscipliniesService = new GetAllDiscipliniesService(respository)
-const getAllDiscipliniesController = new GetAllDiscipliniesController(getAllDiscipliniesService)
+const getAllDiscipliniesService = new GetAllDiscipliniesService(respository);
+const getAllDiscipliniesController = new GetAllDiscipliniesController(getAllDiscipliniesService);
 
-const getDisciplineByIdService = new GetDisciplineByIdService(respository)
-const getDisciplineByIdController = new GetDisciplineByIdController(getDisciplineByIdService)
+const getDisciplineByIdService = new GetDisciplineByIdService(respository);
+const getDisciplineByIdController = new GetDisciplineByIdController(getDisciplineByIdService);
 
-const updateDisciplineService = new UpdateDisciplineService(respository)
-const updateDisciplineController = new UpdateDisciplineController(updateDisciplineService)
+const updateDisciplineService = new UpdateDisciplineService(respository);
+const updateDisciplineController = new UpdateDisciplineController(updateDisciplineService);
 
-const deleteDisciplineService = new DeleteDisciplineService(respository)
-const deleteDisciplineController = new DeleteDisciplineController(deleteDisciplineService)
+const deleteDisciplineService = new DeleteDisciplineService(respository);
+const deleteDisciplineController = new DeleteDisciplineController(deleteDisciplineService);
 
 /**
  * @swagger
@@ -64,10 +64,9 @@ const deleteDisciplineController = new DeleteDisciplineController(deleteDiscipli
  *       400:
  *         description: Erro na requisição
  */
-// criar
 disciplineRouter.post("/disciplinies", loginService.checkToken, (req: Request, res: Response) => {
-    createDisciplineController.createDiscipline(req, res)
-})
+    createDisciplineController.createDiscipline(req, res);
+});
 
 /**
  * @swagger
@@ -79,10 +78,9 @@ disciplineRouter.post("/disciplinies", loginService.checkToken, (req: Request, r
  *       200:
  *         description: Lista de disciplinas
  */
-// // listar todos
 disciplineRouter.get("/disciplinies", (req: Request, res: Response) => {
-    getAllDiscipliniesController.getAllDisciplinies(req, res)
-})
+    getAllDiscipliniesController.getAllDisciplinies(req, res);
+});
 
 /**
  * @swagger
@@ -103,10 +101,9 @@ disciplineRouter.get("/disciplinies", (req: Request, res: Response) => {
  *       404:
  *         description: Disciplina não encontrada
  */
-// // listar apenas um
 disciplineRouter.get("/disciplinies/:id", (req: Request, res: Response) => {
-    getDisciplineByIdController.getDisciplineById(req, res)
-})
+    getDisciplineByIdController.getDisciplineById(req, res);
+});
 
 /**
  * @swagger
@@ -141,10 +138,9 @@ disciplineRouter.get("/disciplinies/:id", (req: Request, res: Response) => {
  *       404:
  *         description: Disciplina não encontrada
  */
-// // atualizar
 disciplineRouter.put("/disciplinies/:id", loginService.checkToken, (req: Request, res: Response) => {
-    updateDisciplineController.updateDiscipline(req, res)
-})
+    updateDisciplineController.updateDiscipline(req, res);
+});
 
 /**
  * @swagger
@@ -167,9 +163,8 @@ disciplineRouter.put("/disciplinies/:id", loginService.checkToken, (req: Request
  *       404:
  *         description: Disciplina não encontrada
  */
-// // deletar
 disciplineRouter.delete("/disciplinies/:id", loginService.checkToken, (req: Request, res: Response) => {
-    deleteDisciplineController.deleteDiscipline(req, res)
-})
+    deleteDisciplineController.deleteDiscipline(req, res);
+});
 
-export { disciplineRouter }
+export { disciplineRouter };

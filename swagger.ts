@@ -6,7 +6,7 @@ const options = {
   definition: {
     openapi: '3.0.0',
     info: {
-      title: 'API de Disciplinas e Usuários',
+      title: 'API de Usuários, Disciplinas e Posts',
       version: '1.0.0',
       description: 'Documentação da API de Disciplinas e Usuários',
     },
@@ -48,10 +48,44 @@ const options = {
             },
           },
         },
+        Post: {
+          type: 'object',
+          properties: {
+            id: {
+              type: 'string',
+              description: 'ID do post',
+            },
+            title: {
+              type: 'string',
+              description: 'Título do post',
+            },
+            description: {
+              type: 'string',
+              description: 'Descrição do post',
+            },
+            discipline: {
+              type: 'array',
+              items: {
+                type: 'string',
+                description: 'ID da disciplina',
+              },
+            },
+            createdAt: {
+              type: 'string',
+              format: 'date-time',
+              description: 'Data de criação do post',
+            },
+            updatedAt: {
+              type: 'string',
+              format: 'date-time',
+              description: 'Data de atualização do post',
+            },
+          },
+        },
       },
     },
   },
-  apis: ['./src/routes/disciplineRoutes.ts', './src/routes/userRoutes.ts'],
+  apis: ['./src/routes/disciplineRoutes.ts', './src/routes/userRoutes.ts', './src/routes/postRoutes.ts'],
 };
 
 const swaggerSpec = swaggerJsdoc(options);
