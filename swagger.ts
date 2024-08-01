@@ -82,6 +82,29 @@ const options = {
             },
           },
         },
+        Discipline: {
+          type: 'object',
+          properties: {
+            id: {
+              type: 'string',
+              description: 'ID do usuário',
+            },
+            title: {
+              type: 'string',
+              description: 'Nome da disciplina',
+            },
+            createdAt: {
+              type: 'string',
+              format: 'date-time',
+              description: 'Data de criação do usuário',
+            },
+            updatedAt: {
+              type: 'string',
+              format: 'date-time',
+              description: 'Data de atualização do usuário',
+            },
+          },
+        },
       },
     },
   },
