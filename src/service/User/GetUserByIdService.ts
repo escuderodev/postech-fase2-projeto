@@ -6,8 +6,7 @@ export class GetUserByIdService  {
     constructor(readonly repository: UserRepositoryInMongoDB) {
     }
 
-    async execute(req: Request) {
-        const id = req.params.id
+    async execute(id: string) {
         return await this.repository.getById(id)
     }
 }

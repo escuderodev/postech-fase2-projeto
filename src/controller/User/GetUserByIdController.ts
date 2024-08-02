@@ -7,8 +7,9 @@ export class GetUserByIdController {
   }
 
   async getUserById(req: Request, res: Response) {
-
-    const user = await this.service.execute(req)
+    
+    const id = req.params.id
+    const user = await this.service.execute(id)
   
     if(!user) {
       res.status(200).json({message: `User Id ${req.params.id} not found!`})
