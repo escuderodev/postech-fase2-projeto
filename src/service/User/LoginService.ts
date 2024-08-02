@@ -4,6 +4,10 @@ import bcrypt from "bcrypt"
 import "dotenv/config"
 import { UserRepositoryInMongoDB } from "../../database/repository/UserRepositoryInMongoDB"
 
+interface TokenPayload {
+    id: string
+}
+
 export class LoginService {
 
     async execute(req: Request, res: Response) {
@@ -47,6 +51,30 @@ export class LoginService {
             next()
         } catch (error) {
             res.status(400).json({message: "Token is not valid!"})
+        }
+    }
+
+    getUserIdFromToken(authorization: string) {
+
+        const secret = process.env.SECRET;
+
+        if (!secret) {
+          throw new Error('SECRET environment variable is not set');
+        }
+
+        if (!authorization.startsWith('Bearer ')) {
+            throw new Error('Invalid authorization header format');
+        }
+
+        const token = authorization.slice(7); // Remove "Bearer " do início do cabeçalho
+
+        try {
+          const decoded = jwt.verify(token, secret) as { id: string }; // Adicionando a tipagem para `decoded`
+          const userId = decoded.id;
+          return userId; // Retorne o ID do usuário se necessário
+        } catch (err) {
+          console.error('Token inválido:', (err as Error).message);
+          return null; // Ou lidar com o erro de outra forma
         }
     }
 }

@@ -6,6 +6,7 @@ export class CreatePostController {
     }
 
     async createPost(req: Request, res: Response) {
+
         try {
             await this.service.execute(req, res)
             res.status(201).json({

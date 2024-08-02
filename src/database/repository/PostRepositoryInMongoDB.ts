@@ -1,20 +1,32 @@
 import { Request } from "express"
 import Post from "../../model/post/Post"
-import { PostRepository } from "../../controller/Post/repository/PostRepository";
+import { PostRepository } from "../../controller/Post/repository/PostRepository"
+import { LoginService } from "../../service/User/LoginService"
+
+const loginService = new LoginService()
 
 export class PostRepositoryInMongoDB implements PostRepository {
-    
+
     async save(req: Request) {
 
-        const { title, description, discipline } = req.body;
+        const { title, description, discipline } = req.body
+        const authorization = req.headers.authorization
 
-        const post = {
-            title,
-            description,
-            discipline: discipline.id
+        if(authorization !== undefined) {
+
+            const userId = loginService.getUserIdFromToken(authorization)
+            console.log(`getUserByToken in Repository: ${userId}`)
+
+            const post = {
+                title,
+                description,
+                author: userId,
+                discipline: discipline.id
+            }
+            const newPost = await Post.create(post)
+            return newPost
         }
-        const newPost = await Post.create(post)
-        return newPost
+        
     }
 
     async getAll() {
@@ -40,11 +52,14 @@ export class PostRepositoryInMongoDB implements PostRepository {
 
         const id = req.params.id
         const { title, description, discipline } = req.body
+        const token = req.body.authorization
+        const userId = loginService.getUserIdFromToken(token)
 
         const post = {
             id: id,
             title: title,
             description: description,
+            author: userId,
             discipline: discipline.id,
             updatedAt: Date.now()
         }
