@@ -17,15 +17,14 @@ export class LoginService {
 
         // check if users not exists
         const user = await userRepository.getByEmail(email)
-        console.log(`GetByEmail: ${user}`)
         if(!user) {
-            return res.status(422).json({message: "mail or password is not valid!"})
+            return res.status(422).json({message: "e-mail is not valid!"})
         }
 
         // check if password is valid
         const checkPassword = await bcrypt.compare(password, user.password)
         if(!checkPassword) {
-            return res.status(422).json({message: "password is not valid!"})
+            throw new Error("password is not valid!");
         }
     
         //user authentication
