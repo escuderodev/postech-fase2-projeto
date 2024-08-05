@@ -1,34 +1,41 @@
 {
-  "compilerOptions": {
-    /* Visit https://aka.ms/tsconfig to read more about this file */
+    "compilerOptions": {
+        /* Visit https://aka.ms/tsconfig to read more about this file */
 
-    /* Projects */
-    "incremental": true,                              /* Save .tsbuildinfo files to allow for incremental compilation of projects. */
+        "lib": ["dom"],
 
-    /* Language and Environment */
-    "target": "ES2020",                                  /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */
+        /* Projects */
+        "incremental": true /* Save .tsbuildinfo files to allow for incremental compilation of projects. */,
 
-    /* Modules */
-    "module": "commonjs",                                /* Specify what module code is generated. */
+        /* Language and Environment */
+        "target": "ES2020" /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */,
 
-    /* Emit */
-    "outDir": "./",                                   /* Specify an output folder for all emitted files. */
+        /* Modules */
+        "module": "commonjs" /* Specify what module code is generated. */,
 
-    /* Interop Constraints */
-    "esModuleInterop": true,                             /* Emit additional JavaScript to ease support for importing CommonJS modules. This enables 'allowSyntheticDefaultImports' for type compatibility. */
+        /* Emit */
+        "outDir": "./" /* Specify an output folder for all emitted files. */,
 
-    /* Type Checking */
-    "strict": true,
+        /* Interop Constraints */
+        "esModuleInterop": true /* Emit additional JavaScript to ease support for importing CommonJS modules. This enables 'allowSyntheticDefaultImports' for type compatibility. */,
 
-    "skipLibCheck": true,
-    
-    /* Test */
-    "types": ["jest"],
+        /* Type Checking */
+        "strict": true,
 
-    "forceConsistentCasingInFileNames": true,
+        "skipLibCheck": true,
 
-    "resolveJsonModule": true
-  },
-  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/test/setup.js", "__test__/disciplineRoutes.spec.ts"],
-  "exclude": ["node_modules"]
+        /* Test */
+        "types": ["jest"],
+
+        "forceConsistentCasingInFileNames": true,
+
+        "resolveJsonModule": true
+    },
+    "include": [
+        "src/**/*.ts",
+        "src/**/*.d.ts",
+        "src/test/setup.js",
+        "__test__/disciplineRoutes.spec.ts"
+    ],
+    "exclude": ["node_modules"]
 }
