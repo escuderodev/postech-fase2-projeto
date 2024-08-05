@@ -4,6 +4,7 @@ import { PostRepository } from "../../controller/Post/repository/PostRepository"
 import { LoginService } from "../../service/User/LoginService"
 import { GetUserByIdService } from "../../service/User/GetUserByIdService"
 import { UserRepositoryInMongoDB } from "./UserRepositoryInMongoDB"
+import Discipline from "../../model/discipline/Discipline";
 
 const loginService = new LoginService()
 const repository = new UserRepositoryInMongoDB()
@@ -30,11 +31,17 @@ export class PostRepositoryInMongoDB implements PostRepository {
                 throw new Error(`User ${userId} not found!`);
             }
 
+            const existingDiscipline = await Discipline.findById(discipline);
+            console.log(`findByID in POstService ${discipline}`)
+            if (!existingDiscipline) {
+                throw new Error('Disciplina não encontrada')
+            }
+
             const post = {
                 title,
                 description,
-                author: user.email,
-                discipline: discipline.id
+                author: user.name,
+                discipline: existingDiscipline.title
             }
 
             const newPost = await Post.create(post)
@@ -81,13 +88,19 @@ export class PostRepositoryInMongoDB implements PostRepository {
             if (!user) {
                 throw new Error(`User ${userId} not found!`);
             }
+
+            const existingDiscipline = await Discipline.findById(discipline);
+            console.log(`findByID in POstService ${discipline}`)
+            if (!existingDiscipline) {
+                throw new Error('Disciplina não encontrada')
+            }
     
             const post = {
                 id: id,
                 title: title,
                 description: description,
-                author: user.email,
-                discipline: discipline.id,
+                author: user.name,
+                discipline: existingDiscipline.title,
                 updatedAt: Date.now()
             }
             return await Post.updateOne({_id: id}, post)

@@ -9,15 +9,7 @@ export class CreatePostService {
 
     async execute(req: Request, res: Response) {
 
-        const { title, description, discipline } = req.body;
-
-        // validations
-        // check requireds fields
-        const existingDiscipline = await Discipline.findById(discipline.id);
-        if (!existingDiscipline) {
-            return res.status(404).json({ message: 'Disciplina não encontrada' });
-        }
-
+        const { title, description, discipline } = req.body
         // create post
         return this.repository.save(req)
     }

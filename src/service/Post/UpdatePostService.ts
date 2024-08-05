@@ -9,14 +9,14 @@ export class UpdatePostService  {
     async execute(req: Request) {
 
         const id = req.params.id
+        const { discipline } = req.body.discipline
 
         const post = await Post.findById({_id: id})
 
         if(!post) {
-            return `Post Id ${id} not found!`
+            throw new Error(`Post Id ${id} not found!`)
         }
 
-        await this.repository.update(req)
-        return `Post update is success!`
+        return this.repository.update(req)
     }
 }
