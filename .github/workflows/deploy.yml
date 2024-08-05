@@ -12,7 +12,8 @@ jobs:
     steps:
     - uses: actions/setup-node@v4
       with:
-        node-version: >=18
+        node-version: '>=18'
+        
     - run: npm ci
     - run: npm test
 
@@ -22,5 +23,5 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Build the Docker image
-      run: docker build -t pos-fiap-2
-      run: echo "Deploy"
+    - run: docker build -t pos-fiap-2
+    - run: echo "Deploy"
