@@ -32,7 +32,7 @@ export class PostRepositoryInMongoDB implements PostRepository {
             }
 
             const existingDiscipline = await Discipline.findById(discipline);
-            console.log(`findByID in POstService ${discipline}`)
+            
             if (!existingDiscipline) {
                 throw new Error('Disciplina não encontrada')
             }
