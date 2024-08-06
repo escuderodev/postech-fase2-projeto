@@ -17,6 +17,7 @@ export class UpdatePostService  {
             throw new Error(`Post Id ${id} not found!`)
         }
 
-        return this.repository.update(req)
+        await this.repository.update(req)
+        return `Post update is success!`
     }
 }
